@@ -1189,7 +1189,7 @@ focus_tree = {
 		prerequisite = { focus = minewar }
 		x = 22
 		y = 7
-		cost = 25
+		cost = 10
 
 		available = {
 		}
@@ -1213,7 +1213,7 @@ focus_tree = {
 		prerequisite = { focus = minewar }
 		x = 20
 		y = 7
-		cost = 20
+		cost = 10
 
 		available = {
 		}
@@ -1237,7 +1237,7 @@ focus_tree = {
 		prerequisite = { focus = weapons_of_mass_destruction }
 		x = 21
 		y = 8
-		cost = 20
+		cost = 5
 
 		available = {
 		}

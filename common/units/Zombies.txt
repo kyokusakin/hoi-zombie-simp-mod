@@ -28,10 +28,10 @@ sub_units = {
 		combat_width = 3
 		
 		#Size Definitions
-		max_strength = 20
+		max_strength = 12
 		max_organisation = 100000
 		default_morale = 1000
-		manpower = 20000
+		manpower = 40000
 
 		#Misc Abilities
 		training_time = 2
@@ -42,7 +42,7 @@ sub_units = {
 		supply_consumption = 0.01
 	
 		need = {
-			zombie_0 = 10
+			zombie_0 = 1
 		}
 
 		river = {
@@ -120,10 +120,10 @@ sub_units = {
 		combat_width = 3
 		
 		#Size Definitions
-		max_strength = 30
+		max_strength = 22
 		max_organisation = 100000
 		default_morale = 1000
-		manpower = 60000
+		manpower = 80000
 
 		#Misc Abilities
 		training_time = 2
@@ -134,7 +134,7 @@ sub_units = {
 		supply_consumption = 0.01
 	
 		need = {
-			zombiemutation_0 = 10
+			zombiemutation_0 = 1
 		}
 		river = {
 			attack = 0.15
@@ -211,10 +211,10 @@ sub_units = {
 		combat_width = 3
 		
 		#Size Definitions
-		max_strength = 45
+		max_strength = 28
 		max_organisation = 100000
 		default_morale = 1000
-		manpower = 80000
+		manpower = 100000
 
 		#Misc Abilities
 		training_time = 2
@@ -225,7 +225,7 @@ sub_units = {
 		supply_consumption = 0.01
 	
 		need = {
-			zombiebettermutation_0 = 10
+			zombiebettermutation_0 = 1
 		}
 
 		river = {
@@ -291,4 +291,6 @@ sub_units = {
 		land_air_wing_size = 100
 		mega_carrier_air_wing_size = 10
 	}
+#######################################################
+# navy
 }

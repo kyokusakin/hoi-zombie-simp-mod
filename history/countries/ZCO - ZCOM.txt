@@ -243,7 +243,7 @@ create_country_leader = {
 
 create_field_marshal = {
     name = "法国中央指挥部特派元帅"
-    picture = "Portrait_Europe_Generic_1"
+    picture = "Portrait_Europe_Generic_1.dds"
     traits = { 
 		infantry_officer
 		career_officer 
@@ -261,7 +261,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
     name = "德国中央指挥部特派元帅"
-    picture = "Portrait_Europe_Generic_2"
+    picture = "Portrait_Europe_Generic_2.dds"
     traits = { 
 		cavalry_officer 
 		armor_officer 

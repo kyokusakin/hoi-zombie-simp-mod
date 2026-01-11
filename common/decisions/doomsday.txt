@@ -570,9 +570,30 @@ Black_market = {
 			has_completed_focus = unite_with_yakuza
 		}
 		complete_effect = {
-			hidden_effect ={
+			if = {
+				limit = {
+					is_faction_leader = yes
+					any_other_country = {
+						is_in_faction_with = ROOT
+						is_major = yes
+					}
+				}
+				random_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+						is_major = yes
+					}
+					set_faction_leader = yes
+				}
+			}
+
+			# 这里的逻辑是直接退阵营
+			leave_faction = yes
+
+			hidden_effect = {
 				country_event = { id = doomsday.19 }
 			}
+			
 			custom_effect_tooltip = ZCOM_no_way_back
 		}
 

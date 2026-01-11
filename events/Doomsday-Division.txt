@@ -645,7 +645,7 @@ country_event = {
 	}
 	immediate = {
 		add_ideas = {
-				the_other_way
+			the_other_way
 		}
 		unlock_national_focus = the_other_way2
 		create_faction = "Criminal Syndicate"
