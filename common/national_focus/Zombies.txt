@@ -32,6 +32,9 @@ focus_tree = {
 			ZOM = {
 				set_technology = { zombietech2 = 1 }
 				set_technology = { zombietech_air_1 = 1 }
+				set_technology = { zombietech_navy_1 = 1 }
+				set_technology = { zombietech_navy_2 = 1 }
+				set_technology = { zombietech_navy_3 = 1}
 				load_oob = "ZOM_mutation"
 			}
 			set_division_template_lock = {

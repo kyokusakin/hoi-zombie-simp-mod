@@ -30,7 +30,6 @@ technologies = {
 		allow = {
             tag = ZOM
         }
-
 	}
 	zombietech2 = {
 
@@ -62,7 +61,6 @@ technologies = {
 		allow = {
             tag = ZOM
         }
-
 	}
 	zombietech3 = {
 
@@ -94,7 +92,6 @@ technologies = {
 		allow = {
             tag = ZOM
         }
-
 	}
 	###############################################################################
 	#AIR
@@ -128,7 +125,6 @@ technologies = {
 		allow = {
             tag = ZOM
         }
-
 	}
 	zombietech_air_2 = {
 
@@ -156,6 +152,95 @@ technologies = {
 		allow = {
             tag = ZOM
         }
+	}
+	###############################################################################
+	#NAVY
+	###############################################################################
+	zombietech_navy_1 = {
+		enable_equipments = {
+			DD_zombie_0 
+		}
+		enable_subunits = {
+			zombie_navy_DD
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
 
+		research_cost = 1.5
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = -2 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			tag = ZOM
+		}
+	}
+	zombietech_navy_2 = {
+		enable_equipments = {
+			CL_zombie_0 
+		}
+		enable_subunits = {
+			zombie_navy_CL
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = -2 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			tag = ZOM
+		}
+	}
+	zombietech_navy_3 = {
+		enable_equipments = {
+			BB_zombie_0 
+		}
+		enable_subunits = {
+			zombie_navy_BB
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = -2 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			tag = ZOM
+		}
 	}
 }

@@ -193,22 +193,31 @@ equipments = {
 		year = 1933
 		is_archetype = yes
 		is_convertable = no
-		picture = swimming_zombie
+		sprite = destroyer
 		is_buildable = no
 		priority = 2000
-		type = destroyer
+		type = { screen_ship }
 
-		torpedo_attack = 60
-		naval_speed = 40
-		sub_detection = 45
-		surface_detection = 40
-		reliability = 0.8
-		naval_range = 4500
-		max_strength = 70
+		naval_speed = 32.8                        # Max Speed - maximum speed in kilometres per hour of the ship, higher means faster in combat and contributes to evasion
+		lg_attack = 5.7                          # Light gun attack - How much damage the ship does with light guns (more effective against screens)
+		lg_armor_piercing = 1.9                  # Light gun armor piercing - Determines how much armor ship's light gun attack can pierce
+		hg_attack = 0                          # Heavy gun attack - How much damage the ship does with heavy guns (more effective against capitals and carriers)
+		hg_armor_piercing = 0                  # Heavy gun armor piercing - Determines how much armor ship's heavy gun attack can pierce
+		torpedo_attack = 108                      # Torpedo attack - How much damage we can do when using the ship's torpedos (more effective against capitals and carriers)
+		anti_air_attack = 15.5                     # Anti-air - How much anti-air firepower the ship carries for shooting down enemy planes
+		surface_detection = 38                  # Surface detection - Ability to detect surface vessels
+		sub_attack = 23                         # Anti-submarine attack - How much damage this ship deals to enemy submarines using depth charges
+		sub_detection = 41                       # Sub detection - Ability to detect submarines
+		surface_visibility = 10                 # Surface Visibility - How easy to find this ship is (lower is better)
+		sub_visibility = 0                     # Sub Visibility - How easy it is to detect this submarine (lower is better)
+		naval_range = 4500                      # Naval Range - max distance in kilometres the ship can travel from it's nearest Naval Base
+		
+		reliability = 1
+		#armor_value = 0
+		max_strength = 63 # HP
+
+		manpower = 10000
 		build_cost_ic = 1000
-		naval_dominance_factor = 50
-		manpower = 1000
-
 		resources = {
 		}
 		lend_lease_cost = 2000
@@ -226,21 +235,31 @@ equipments = {
 
 		is_archetype = yes
 		is_convertable = no
-		picture = swimming_zombie
+		sprite = light_cruiser
 		is_buildable = no
 		priority = 2000
-		type = light_cruiser
-		naval_speed = 35
-		sub_detection = 20
-		surface_detection = 40
-		reliability = 0.8
-		naval_range = 6000
-		max_strength = 200
+		type = { screen_ship }
+
+		naval_speed = 31                        # Max Speed - maximum speed in kilometres per hour of the ship, higher means faster in combat and contributes to evasion
+		lg_attack = 43.5                          # Light gun attack - How much damage the ship does with light guns (more effective against screens)
+		lg_armor_piercing = 8.1                  # Light gun armor piercing - Determines how much armor ship's light gun attack can pierce
+		hg_attack = 0                          # Heavy gun attack - How much damage the ship does with heavy guns (more effective against capitals and carriers)
+		hg_armor_piercing = 0                  # Heavy gun armor piercing - Determines how much armor ship's heavy gun attack can pierce
+		torpedo_attack = 0                      # Torpedo attack - How much damage we can do when using the ship's torpedos (more effective against capitals and carriers)
+		anti_air_attack = 19.5                     # Anti-air - How much anti-air firepower the ship carries for shooting down enemy planes
+		surface_detection = 12                  # Surface detection - Ability to detect surface vessels
+		sub_attack = 23                         # Anti-submarine attack - How much damage this ship deals to enemy submarines using depth charges
+		sub_detection = 41                       # Sub detection - Ability to detect submarines
+		surface_visibility = 15                 # Surface Visibility - How easy to find this ship is (lower is better)
+		sub_visibility = 0                     # Sub Visibility - How easy it is to detect this submarine (lower is better)
+		naval_range = 4500                      # Naval Range - max distance in kilometres the ship can travel from it's nearest Naval Base
+		
+		reliability = 1
+		armor_value = 12
+		max_strength = 180 # HP
+
+		manpower = 40000
 		build_cost_ic = 4000
-		naval_dominance_factor = 300
-		lg_armor_piercing = 10
-		lg_attack = 65
-		manpower = 2000
 
 		resources = {
 		}
@@ -254,36 +273,44 @@ equipments = {
 		visual_level = 0
 	}
 
-	CA_zombie = {
+	BB_zombie = {
 		year = 1933
 
 		is_archetype = yes
 		is_convertable = no
-		picture = swimming_zombie
+		
+		sprite = battleship
 		is_buildable = no
 		priority = 2000
-		type = heavy_cruiser
-		naval_speed = 30
-		sub_detection = 20
-		surface_detection = 40
-		reliability = 0.8
-		naval_range = 6000
-		max_strength = 500
-		build_cost_ic = 8000
-		naval_dominance_factor = 400
-		lg_armor_piercing = 10
-		lg_attack = 10
-		hg_armor_piercing =  50
-		hg_attack = 100
-		manpower = 4000
+		type = { capital_ship }
 
+		naval_speed = 28.2                        # Max Speed - maximum speed in kilometres per hour of the ship, higher means faster in combat and contributes to evasion
+		lg_armor_piercing = 7                  # Light gun armor piercing - Determines how much armor ship's light gun attack can pierce
+		lg_attack = 18                          # Light gun attack - How much damage the ship does with light guns (more effective against screens)
+		hg_armor_piercing = 45                  # Heavy gun armor piercing - Determines how much armor ship's heavy gun attack can pierce
+		hg_attack = 78                          # Heavy gun attack - How much damage the ship does with heavy guns (more effective against capitals and carriers)
+		torpedo_attack = 0                      # Torpedo attack - How much damage we can do when using the ship's torpedos (more effective against capitals and carriers)
+		anti_air_attack = 23.6                     # Anti-air - How much anti-air firepower the ship carries for shooting down enemy planes
+		surface_detection = 38                  # Surface detection - Ability to detect surface vessels
+		sub_attack = 0                         # Anti-submarine attack - How much damage this ship deals to enemy submarines using depth charges
+		sub_detection = 15                       # Sub detection - Ability to detect submarines
+		surface_visibility = 20                 # Surface Visibility - How easy to find this ship is (lower is better)
+		sub_visibility = 0                     # Sub Visibility - How easy it is to detect this submarine (lower is better)
+		naval_range = 4500                      # Naval Range - max distance in kilometres the ship can travel from it's nearest Naval Base
+
+		reliability = 1
+		armor_value = 40 # Armor
+		max_strength = 517 # HP
+
+		manpower = 80000
+		build_cost_ic = 6000
 		resources = {
 		}
 		lend_lease_cost = 2000
 	}
-	CA_zombie_0 = {
+	BB_zombie_0 = {
 		year = 2000
-		archetype = CA_zombie
+		archetype = BB_zombie
 		active = no
 		priority = 05
 		visual_level = 0
