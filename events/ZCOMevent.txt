@@ -1,0 +1,60 @@
+
+add_namespace = ZCOM_event
+
+country_event = {
+	id = ZCOM_event.1
+	title = "send_men"
+	desc = "ZCOM_event.1.d"
+	is_triggered_only = yes
+	option = {
+        	name = send_1
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_manpower < 200000
+				factor = 10
+			}
+		}
+		clr_country_flag = send_10
+		clr_country_flag = send_100
+	}
+	option = {
+        	name = send_10
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_manpower < 200000
+				factor = 0
+			}
+			modifier = {
+				AND  = {
+					has_manpower > 2000000
+					has_manpower < 20000000
+				}
+				factor = 10
+			}
+		}
+		set_country_flag = send_10
+		clr_country_flag = send_100
+	}
+	option = {
+        	name = send_100
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_manpower < 200000
+				factor = 0
+			}
+			modifier = {
+				has_manpower < 2000000
+				factor = 0
+			}
+			modifier = {
+				has_manpower > 2000000
+				factor = 10
+			}
+		}
+		clr_country_flag = send_10
+		set_country_flag = send_100
+	}
+}

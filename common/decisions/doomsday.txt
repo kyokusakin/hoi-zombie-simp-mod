@@ -100,7 +100,6 @@ doomsday_initiative = {
 		}
 		complete_effect = {
 			add_manpower = -30000
-			ZCO = { add_manpower = 30000 }
 			add_ideas = {
 				doomsdaymember
 			}
@@ -186,24 +185,145 @@ doomsday_initiative = {
 			ZCO = { exists = yes}
 		}
 		
-		days_re_enable = 25
-		
 		visible = {
 			ZCO={ exists=yes }
 			NOT = {
 				tag = ZCO
 				tag = ZOM
 			}
+			is_ai = no
+		}
+		complete_effect = {
+			country_event = {id = ZCOM_event.1 }
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	send_men_1 = {
+		icon = generic_operation
+
+		available = {
+			ZCO = { exists = yes}
+		}
+		
+		days_re_enable = 25
+		
+		visible = {
+			ZCO={ exists=yes }
+			NOT = {has_idea = send_manpower}
+			NOT = {
+				tag = ZCO
+				tag = ZOM
+			}
 			has_manpower > 10000
+			NOT = {
+				OR = {
+					has_country_flag = send_10
+					has_country_flag = send_100
+				}
+			}
 		}
 		complete_effect = {
 			add_manpower = -10000 
+			ZCO = {
+				add_manpower = 10000
+			}
+			hidden_effect = {
+				add_timed_idea ={ idea = send_manpower  days = 25 }
+			}
 		}
 
 		ai_will_do = {
 			factor = 15
 			modifier = {
 				has_manpower < 200000
+				factor = -15
+			}
+			modifier = {
+				has_global_flag = zcom2
+				factor = 5
+			}
+		}
+	}
+
+	send_men_2 = {
+		icon = generic_operation
+
+		available = {
+			ZCO = { exists = yes}
+		}
+		
+		days_re_enable = 25
+		
+		visible = {
+			ZCO={ exists=yes }
+			NOT = {has_idea = send_manpower}
+			NOT = {
+				tag = ZCO
+				tag = ZOM
+			}
+			has_manpower > 100000
+			has_country_flag = send_10
+		}
+		complete_effect = {
+			add_manpower = -100000
+			ZCO = {
+				add_manpower = 100000
+			}
+			hidden_effect = {
+				add_timed_idea ={ idea = send_manpower  days = 25 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				has_manpower < 2000000
+				factor = -15
+			}
+			modifier = {
+				has_global_flag = zcom2
+				factor = 5
+			}
+		}
+	}
+
+	send_men_3 = {
+		icon = generic_operation
+
+		available = {
+			ZCO = { exists = yes}
+		}
+		
+		days_re_enable = 25
+		
+		visible = {
+			ZCO={ exists=yes }
+			NOT = {has_idea = send_manpower}
+			NOT = {
+				tag = ZCO
+				tag = ZOM
+			}
+			has_manpower > 1000000
+			has_country_flag = send_100
+		}
+		complete_effect = {
+			add_manpower = -1000000
+			ZCO = {
+				add_manpower = 1000000
+			}
+			hidden_effect = {
+				add_timed_idea ={ idea = send_manpower  days = 25 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				has_manpower < 20000000
 				factor = -15
 			}
 			modifier = {
@@ -571,30 +691,9 @@ Black_market = {
 			has_completed_focus = unite_with_yakuza
 		}
 		complete_effect = {
-			if = {
-				limit = {
-					is_faction_leader = yes
-					any_other_country = {
-						is_in_faction_with = ROOT
-						is_major = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_in_faction_with = ROOT
-						is_major = yes
-					}
-					set_faction_leader = yes
-				}
-			}
-
-			# 这里的逻辑是直接退阵营
-			leave_faction = yes
-
-			hidden_effect = {
+			hidden_effect ={
 				country_event = { id = doomsday.19 }
 			}
-			
 			custom_effect_tooltip = ZCOM_no_way_back
 		}
 

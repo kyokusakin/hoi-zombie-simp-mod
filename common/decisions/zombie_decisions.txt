@@ -1108,55 +1108,55 @@ Zombie_decisions = {
 		}
 	}
 	
-#	antizombie_allianz = {
-#		icon = generic_operation
-#		fire_only_once = yes
-#		available = {
-#			FROM={ NOT = { is_in_faction_with = ENG }}
-#			has_game_rule = {
-#				rule = normal_alliances
-#				option = UNITED
-#			}
-#			NOT = { has_war_with = ZCO }
-#			has_capitulated = no
-#			NOT = { tag = ZOM }
-#			NOT = { tag = ZCO }
-#			ZOM = { exists = yes }
-#		}
-#		cost = 25
-#		
-#		visible = {
-#			FROM={ NOT = { is_in_faction_with = ENG }}
-#			FROM={ NOT = { has_war_with = ZCO }}
-#			ZOM = { exists = yes }
-#		}
-#		complete_effect = {
-#			ZCO = { add_to_Faction = FROM }
-#			add_ai_strategy = {
-#			   type = alliance
-#			   id = ZCO
-#			   value = 200
-#			}
-#		}
-#
-#		ai_will_do = {
-#			base = 10
-#			modifier = {
-#				has_war_with = ZOM
-#				add = 200
-#			}
-#			modifier = {
-#				any_neighbor_country = {
-#					is_neighbor_of = ZOM
-#				}
-#				add = 200
-#			}
-#			modifier = {
-#				is_major = yes
-#				add = 100
-#			}
-#		}
-#	}
+	antizombie_allianz = {
+		icon = generic_operation
+		fire_only_once = yes
+		available = {
+			FROM={ NOT = { is_in_faction_with = ENG }}
+			has_game_rule = {
+				rule = normal_alliances
+				option = UNITED
+			}
+			NOT = { has_war_with = ZCO }
+			has_capitulated = no
+			NOT = { tag = ZOM }
+			NOT = { tag = ZCO }
+			ZOM = { exists = yes }
+		}
+		cost = 25
+		
+		visible = {
+			FROM={ NOT = { is_in_faction_with = ENG }}
+			FROM={ NOT = { has_war_with = ZCO }}
+			ZOM = { exists = yes }
+		}
+		complete_effect = {
+			ZCO = { add_to_Faction = FROM }
+			add_ai_strategy = {
+			   type = alliance
+			   id = ZCO
+			   value = 200
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				has_war_with = ZOM
+				add = 200
+			}
+			modifier = {
+				any_neighbor_country = {
+					is_neighbor_of = ZOM
+				}
+				add = 200
+			}
+			modifier = {
+				is_major = yes
+				add = 100
+			}
+		}
+	}
 	usa_special_forces_decision = {
         icon = GFX_decision_generic_build_troops
         available = {
