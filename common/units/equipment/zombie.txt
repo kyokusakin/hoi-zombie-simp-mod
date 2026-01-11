@@ -186,4 +186,85 @@ equipments = {
 		priority = 05
 		visual_level = 0
 	}
+
+	#######################################################
+# NAVAL
+	swimming_zombie = {
+		year = 1933
+		is_archetype = yes
+		is_convertable = no
+		picture = swimming_zombie
+		is_buildable = no
+		priority = 2000
+		type = destroyer
+
+		torpedo_attack = 60
+		naval_speed = 40
+		sub_detection = 45
+		surface_detection = 40
+		reliability = 0.8
+		naval_range = 4500
+		max_strength = 70
+		build_cost_ic = 1000
+		naval_dominance_factor = 50
+		manpower = 1000
+
+		resources = {
+		}
+		lend_lease_cost = 2000
+	}
+
+	CL_zombie = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = no
+		picture = swimming_zombie
+		is_buildable = no
+		priority = 2000
+		type = light_cruiser
+		naval_speed = 35
+		sub_detection = 20
+		surface_detection = 40
+		reliability = 0.8
+		naval_range = 6000
+		max_strength = 200
+		build_cost_ic = 4000
+		naval_dominance_factor = 300
+		lg_armor_piercing = 10
+		lg_attack = 65
+		manpower = 2000
+
+		resources = {
+		}
+		lend_lease_cost = 2000
+	}
+
+	CA_zombie = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = no
+		picture = swimming_zombie
+		is_buildable = no
+		priority = 2000
+		type = heavy_cruiser
+		naval_speed = 30
+		sub_detection = 20
+		surface_detection = 40
+		reliability = 0.8
+		naval_range = 6000
+		max_strength = 500
+		build_cost_ic = 8000
+		naval_dominance_factor = 400
+		lg_armor_piercing = 10
+		lg_attack = 10
+		hg_armor_piercing =  50
+		hg_attack = 100
+		manpower = 4000
+
+		resources = {
+		}
+		lend_lease_cost = 2000
+	}
 }
