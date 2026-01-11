@@ -188,8 +188,8 @@ equipments = {
 	}
 
 	#######################################################
-# NAVAL
-	swimming_zombie = {
+	# NAVAL
+	DD_zombie = {
 		year = 1933
 		is_archetype = yes
 		is_convertable = no
@@ -212,6 +212,13 @@ equipments = {
 		resources = {
 		}
 		lend_lease_cost = 2000
+	}
+	DD_zombie_0 = {
+		year = 2000
+		archetype = DD_zombie
+		active = no
+		priority = 05
+		visual_level = 0
 	}
 
 	CL_zombie = {
@@ -238,6 +245,13 @@ equipments = {
 		resources = {
 		}
 		lend_lease_cost = 2000
+	}
+	CL_zombie_0 = {
+		year = 2000
+		archetype = CL_zombie
+		active = no
+		priority = 05
+		visual_level = 0
 	}
 
 	CA_zombie = {
@@ -266,5 +280,12 @@ equipments = {
 		resources = {
 		}
 		lend_lease_cost = 2000
+	}
+	CA_zombie_0 = {
+		year = 2000
+		archetype = CA_zombie
+		active = no
+		priority = 05
+		visual_level = 0
 	}
 }
