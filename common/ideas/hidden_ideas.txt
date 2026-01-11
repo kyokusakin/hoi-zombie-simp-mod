@@ -1,0 +1,14 @@
+ideas = {
+	hidden_ideas= {
+		send_manpower = {
+			picture = PLACEHOLDER_idea_icon 
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+		}
+	}
+}
