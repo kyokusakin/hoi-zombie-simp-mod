@@ -1,0 +1,42 @@
+﻿units = {
+	division = {
+		name = "超级僵尸"
+		location = 9093
+		division_template = "超级僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "超级僵尸"
+		location = 9093
+		division_template = "超级僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "超级僵尸"
+		location = 9093
+		division_template = "超级僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "超级僵尸"
+		location = 9093
+		division_template = "超级僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "超级僵尸"
+		location = 9093
+		division_template = "超级僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "超级僵尸"
+		location = 9093
+		division_template = "超级僵尸"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+}

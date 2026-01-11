@@ -1,0 +1,8 @@
+﻿units = {
+	division= {
+		name = "僵尸"
+		location = 12689
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+}

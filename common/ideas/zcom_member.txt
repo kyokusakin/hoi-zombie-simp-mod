@@ -1,0 +1,190 @@
+ideas = {
+	country = {
+		doomsdayheadquarters= {
+			picture = generic_fortify_the_borders_zcom
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_weekly = 0.02
+				stability_weekly = 0.02
+				political_power_factor = 0.2
+				experience_gain_army = 0.2
+				experience_gain_navy = 0.1
+				experience_gain_air = 0.2
+				planning_speed = 0.10
+				max_planning = 0.15
+				max_command_power = 15
+				command_power_gain = 0.2
+			}
+			targeted_modifier = {
+				tag = ZOM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		doomsdaymember= {
+			picture = generic_fortify_the_borders_zcom
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_weekly = 0.01
+				stability_weekly = 0.01
+				political_power_factor = 0.1
+				experience_gain_air = 0.1
+				experience_gain_navy = 0.05
+				experience_gain_army = 0.1
+				planning_speed = 0.1
+				max_planning = 0.05
+				max_command_power = 10
+				command_power_gain = 0.15
+			}
+
+		targeted_modifier = {
+				tag = ZOM
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		ZCOMfortress= {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_fortify_the_borders
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain =0.1
+				war_support_weekly = 0.01
+				command_power_gain = 0.2
+				experience_gain_army = 0.1
+			}
+
+			targeted_modifier = {
+				tag = ZOM
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.08
+			}
+		}
+		
+		ZCOM_base= {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_war_preparation
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				war_support_weekly = 0.02
+				stability_weekly = 0.01
+				command_power_gain = 0.2
+				experience_gain_army = 0.1
+				max_command_power = 10
+			}
+
+			targeted_modifier = {
+				tag = ZOM
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		
+		ZCOM_training= {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_army_war_college
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.05
+				experience_gain_army = 0.1
+				command_power_gain = 0.05
+				max_command_power = 5
+			}
+		}
+
+		ZCOM_jap= {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = jap_supremacy_of_technology_zcom
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		
+		ZCOMhelp= {
+			allowed = {
+				always = yes
+			}
+			picture = generic_volunteer_expedition_bonus
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = ZOM
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+			}
+		}
+        
+		no_surrender = {
+			picture = generic_morale_bonus
+			
+			allowed = {
+				has_war_with = ZOM
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = +100.00
+			}
+		}
+    }
+}

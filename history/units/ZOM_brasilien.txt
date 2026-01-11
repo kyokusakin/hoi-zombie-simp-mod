@@ -1,0 +1,44 @@
+﻿units = {
+	division= {
+		name = "僵尸"
+		location = 10946
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 10946
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 12933
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 2132
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 2132
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 2132
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 12933
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+}

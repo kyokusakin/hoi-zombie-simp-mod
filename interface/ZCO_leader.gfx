@@ -1,0 +1,15 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_generic_army_europe_1"
+		texturefile = "gfx/leaders/ZCO/Portrait_Europe_Generic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_army_europe_2"
+		texturefile = "gfx/leaders/ZCO/Portrait_Europe_Generic_2.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_army_europe_3"
+		texturefile = "gfx/leaders/ZCO/Portrait_Europe_Generic_3.dds"
+	}
+}

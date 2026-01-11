@@ -1,0 +1,80 @@
+﻿units = {
+	division= {
+		name = "僵尸"
+		location = 1843
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 1843
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 905
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 9832
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 9832
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 11782
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 905
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 905
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 905
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 1077
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 1077
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 1843
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "僵尸"
+		location = 1843
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,36 @@
+
+add_namespace = Zombiewars
+
+country_event = {
+	id = Zombiewars.1
+	title = "Zombiewars.1.name"
+	desc = "Zombiewars.1.desc"
+    hidden = yes
+	trigger = {
+		has_capitulated = no
+        country_exists = ZOM
+		any_neighbor_country = {
+			NOT = { has_war_with = ZOM }
+			TAG = ZOM
+		}
+	}
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = "Namnamnam"
+        if = {
+            limit = {
+		        AND = {
+		        	NOT = { has_war_with = ZOM }
+		        }
+            }
+			ZOM={
+				add_named_threat = { threat = 10 }
+        	    declare_war_on = {
+        	        type = annex_everything
+        	        target = FROM
+        	    }
+			}
+        }
+	}
+}

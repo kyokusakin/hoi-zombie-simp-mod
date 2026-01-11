@@ -1,0 +1,463 @@
+﻿set_research_slots = 0
+set_stability = 1
+set_war_support = 1
+set_convoys = 114514
+add_manpower = 200000
+add_offsite_building = { type = arms_factory level = 20 }
+
+add_ideas = {
+	Zombie
+	closed_economy
+	zombie_nation2
+    DONTMAKEGUN
+}
+
+set_technology = {
+	zombietech=1
+	infantry_equipment_0=0
+	#basic_train=1
+}
+
+set_rule = { 
+	can_decline_call_to_war = no
+	can_be_spymaster = no
+	can_boost_other_ideologies = no
+	can_boost_own_ideology = no
+	can_create_collaboration_government = no
+	can_create_factions = no
+	can_force_government = no
+	can_join_factions = no
+	can_send_volunteers = no
+	can_puppet = no
+}
+
+division_template = {
+	name = "僵尸"
+	role = ZOMBIE_role_0
+	is_locked = yes
+	force_allow_recruiting = yes
+	regiments = {
+		Zombies= { x = 0 y = 0 }
+		Zombies= { x = 0 y = 1 }
+		Zombies= { x = 0 y = 2 }
+		Zombies= { x = 1 y = 0 }
+		Zombies= { x = 1 y = 1 }
+		Zombies= { x = 1 y = 2 }
+		Zombies= { x = 2 y = 0 }
+		Zombies= { x = 2 y = 1 }
+		Zombies= { x = 2 y = 2 }
+		Zombies= { x = 3 y = 0 }
+		Zombies= { x = 3 y = 1 }
+		Zombies= { x = 3 y = 2 }
+	}
+	priority = 100
+}
+division_template = {
+	name = "进化僵尸"
+	role = ZOMBIE_role_1
+	is_locked = yes
+	force_allow_recruiting = yes
+	regiments = {
+		Zombies2= { x = 0 y = 0 }
+		Zombies2= { x = 0 y = 1 }
+		Zombies2= { x = 0 y = 2 }
+		Zombies2= { x = 1 y = 0 }
+		Zombies2= { x = 1 y = 1 }
+		Zombies2= { x = 1 y = 2 }
+		Zombies2= { x = 2 y = 0 }
+		Zombies2= { x = 2 y = 1 }
+		Zombies2= { x = 2 y = 2 }
+		Zombies2= { x = 3 y = 0 }
+		Zombies2= { x = 3 y = 1 }
+		Zombies2= { x = 3 y = 2 }
+	}
+	priority = 100
+}
+division_template = {
+	name = "超级僵尸"
+	role = ZOMBIE_role_2
+	is_locked = yes
+	force_allow_recruiting = yes
+	regiments = {
+		Zombies3= { x = 0 y = 0 }
+		Zombies3= { x = 0 y = 1 }
+		Zombies3= { x = 0 y = 2 }
+		Zombies3= { x = 1 y = 0 }
+		Zombies3= { x = 1 y = 1 }
+		Zombies3= { x = 1 y = 2 }
+		Zombies3= { x = 2 y = 0 }
+		Zombies3= { x = 2 y = 1 }
+		Zombies3= { x = 2 y = 2 }
+		Zombies3= { x = 3 y = 0 }
+		Zombies3= { x = 3 y = 1 }
+		Zombies3= { x = 3 y = 2 }
+	}
+	priority = 100
+} 
+
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+create_country_leader = {
+	name = "僵尸"
+	picture = "Portrait_Zombie.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+}
+
+create_country_leader = {
+	name = "僵尸"
+	picture = "Portrait_Zombie.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+}
+
+create_country_leader = {
+	name = "僵尸"
+	picture = "Portrait_Zombie.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+}
+
+create_country_leader = {
+	name = "僵尸"
+	picture = "Portrait_Zombie.dds"
+	expire = "1965.1.1"
+	ideology = anti_revisionism
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+}
+
+create_field_marshal = {
+	name = "母体"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 8
+    attack_skill = 10
+    defense_skill = 6
+    planning_skill = 5
+    logistics_skill = 5
+} 
+create_corps_commander = {
+	name = "母体子嗣1"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+} 
+create_corps_commander = {
+	name = "母体子嗣2"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+} 
+create_corps_commander = {
+	name = "母体子嗣3"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+} 
+create_corps_commander = {
+	name = "母体子嗣4"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+} 
+create_corps_commander = {
+	name = "母体子嗣5"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+} 
+create_corps_commander = {
+	name = "母体子嗣6"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+} 
+create_corps_commander = {
+	name = "母体子嗣7"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+} 
+create_corps_commander = {
+	name = "母体子嗣8"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣9"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣10"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣11"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 2
+} 
+create_corps_commander = {
+	name = "母体子嗣12"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣13"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣14"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣15"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣16"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣17"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣18"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣19"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣20"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣21"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣22"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "母体子嗣23"
+	picture = "Portrait_Zombie.dds"
+	traits = {
+		ZOM_expert_delegator
+		ZOM_skilled_staffer
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}

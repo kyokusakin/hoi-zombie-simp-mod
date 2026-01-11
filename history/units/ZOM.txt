@@ -1,0 +1,63 @@
+Zombie1_template = {
+	name = "僵尸"
+	role = ZOMBIE_role_0
+	is_locked = yes
+	force_allow_recruiting = yes
+	regiments = {
+		Zombies= { x = 0 y = 0 }
+		Zombies= { x = 0 y = 1 }
+		Zombies= { x = 0 y = 2 }
+		Zombies= { x = 1 y = 0 }
+		Zombies= { x = 1 y = 1 }
+		Zombies= { x = 1 y = 2 }
+		Zombies= { x = 2 y = 0 }
+		Zombies= { x = 2 y = 1 }
+		Zombies= { x = 2 y = 2 }
+		Zombies= { x = 3 y = 0 }
+		Zombies= { x = 3 y = 1 }
+		Zombies= { x = 3 y = 2 }
+	}
+	priority = 100
+}
+Zombie2_template = {
+	name = "进化僵尸"
+	role = ZOMBIE_role_1
+	is_locked = yes
+	force_allow_recruiting = yes
+	regiments = {
+		Zombies2= { x = 0 y = 0 }
+		Zombies2= { x = 0 y = 1 }
+		Zombies2= { x = 0 y = 2 }
+		Zombies2= { x = 1 y = 0 }
+		Zombies2= { x = 1 y = 1 }
+		Zombies2= { x = 1 y = 2 }
+		Zombies2= { x = 2 y = 0 }
+		Zombies2= { x = 2 y = 1 }
+		Zombies2= { x = 2 y = 2 }
+		Zombies2= { x = 3 y = 0 }
+		Zombies2= { x = 3 y = 1 }
+		Zombies2= { x = 3 y = 2 }
+	}
+	priority = 100
+}
+Zombie3_template = {
+	name = "超级僵尸"
+	role = ZOMBIE_role_2
+	is_locked = yes
+	force_allow_recruiting = yes
+	regiments = {
+		Zombies3= { x = 0 y = 0 }
+		Zombies3= { x = 0 y = 1 }
+		Zombies3= { x = 0 y = 2 }
+		Zombies3= { x = 1 y = 0 }
+		Zombies3= { x = 1 y = 1 }
+		Zombies3= { x = 1 y = 2 }
+		Zombies3= { x = 2 y = 0 }
+		Zombies3= { x = 2 y = 1 }
+		Zombies3= { x = 2 y = 2 }
+		Zombies3= { x = 3 y = 0 }
+		Zombies3= { x = 3 y = 1 }
+		Zombies3= { x = 3 y = 2 }
+	}
+	priority = 100
+} 

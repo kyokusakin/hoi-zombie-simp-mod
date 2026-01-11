@@ -1,0 +1,20 @@
+################
+##### ZCO ######
+################
+
+Zombie_decisions= {
+	
+	allowed = {
+	}
+}
+doomsday_initiative= {
+	
+	allowed = {
+	}
+}
+
+Black_market= {
+	
+	allowed = {
+	}
+}

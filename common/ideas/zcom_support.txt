@@ -1,0 +1,183 @@
+ideas = {
+	country = {
+		criminal_way= {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				weekly_manpower = 700
+			}
+
+		}
+		
+		criminal_way2= {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.2
+				weekly_manpower = 650
+			}
+		}
+		
+		criminal_way3= {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+				weekly_manpower = 550
+			}
+		}
+		
+		criminal_way4= {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+				weekly_manpower = 450
+			}
+		}
+		
+		criminal_way5= {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.7
+				weekly_manpower = 450
+			}
+		}
+		
+		criminal_way6= {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -1
+				weekly_manpower = 350
+			}
+		}
+		
+		the_other_way= {
+			picture = the_other_way
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				attrition = 0.15
+			}
+		}
+		international_finance = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 1
+				weekly_manpower = 1200
+			}
+		}
+		international_finance2 = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 2
+				weekly_manpower = 1400
+			}
+		}
+		
+		international_finance3 = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 3
+				weekly_manpower = 2000
+			}
+		}
+    }
+}

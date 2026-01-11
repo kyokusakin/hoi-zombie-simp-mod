@@ -1,0 +1,85 @@
+Zombie_generic_0 = {
+	role = ZOMBIE_role_0
+	available_for = {
+		ZOM
+	}
+	upgrade_prio = {
+		base = 1
+		modifier = {
+            factor = 10	
+        }
+	}
+	
+	# First zombie template
+	Zombie1_template = {
+		reinforce_prio = 2
+		custom_icon = 7
+		
+		upgrade_prio = {
+			base = 10
+			
+			modifier = {
+				factor = 20
+			}
+		}
+		
+		#can_upgrade_in_field = {
+		#	always = yes
+		#}
+
+		target_template = {
+			regiments = {
+				Zombies = 12
+			}
+		}
+		replace_at_match = 0.75
+		replace_with = Zombie2_template
+		target_min_match = 0.25
+	}
+}
+Zombie_generic_1 = {
+	role = ZOMBIE_role_1
+	# Second zombie template
+	Zombie2_template = {
+		reinforce_prio = 2
+		
+		upgrade_prio = {
+			base = 10
+			
+			modifier = {
+				factor = 20
+			}
+		}
+		
+		target_template = {
+			regiments = {
+				Zombies2 = 12
+			}
+		}
+		replace_at_match = 0.75
+		replace_with = Zombie3_template
+		target_min_match = 0.25
+	}
+}
+Zombie_generic_2 = {
+	role = ZOMBIE_role_2
+	# Third zombie template
+	Zombie3_template = {
+		reinforce_prio = 2
+		
+		upgrade_prio = {
+			base = 10
+			
+			modifier = {
+				factor = 20
+			}
+		}
+		
+		target_template = {
+			
+			regiments = {
+				Zombies3 = 12
+			}
+		}
+	}
+}

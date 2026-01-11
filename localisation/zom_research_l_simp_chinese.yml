@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+  zcom_research_name:0 "末日研究协议"
+  zcom_research_desc:0 "世界上大多数国家都加入了末日师，这使该组织拥有庞大的科学家资源。"
+  FIREBOMBS_TOOLTIP:0 "燃烧弹对殭尸极为有效，但会对平民造成巨大伤害。"
+  ANTIPERSONNEL_TOOLTIP:0 "破片炸弹会摧毁一切挡在它前方的目标。"
+  Usable_Weapons:0 "可用武器"
+  sold_zombies:0 "非法贩卖殭尸部位"
+  criminal_way:0 "非法行动"
+  colonial_bound:0 "反殖民通讯"
+  broke_international_norm:0 "违反国际标准"

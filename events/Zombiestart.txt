@@ -1,0 +1,650 @@
+
+add_namespace = Zombiestart
+
+#####INDIA#######
+
+country_event = {
+	id = Zombiestart.1
+	title = "Zombiestart.1.name"
+	desc = "Zombiestart.1.desc"
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = ZOM_spawn
+			option = NORMAL
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = Zombie_spawn
+					option = NORMAL
+				}
+			}
+			country_event = { id = Zombiestart.2 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = Zombie_spawn
+					option = ONE_YEAR
+				}
+			}
+			country_event = { id = Zombiestart.2 days = 365 }  
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = Zombie_spawn
+					option = TWO_YEAR
+				}
+			}
+			country_event = { id = Zombiestart.2 days = 730 }  
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = Zombie_spawn
+					option = THREE_YEARS
+				}
+			}
+			country_event = { id = Zombiestart.2 days = 1095 }
+		}
+	}
+	option = {
+		name = Namnamnam
+		set_global_flag = zom_india
+	}
+}
+
+
+
+country_event = {
+	id = Zombiestart.2
+	title = "Zombiestart.2.name"
+	desc = "Zombiestart.2.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = Namnamnam
+		ZOM = { transfer_state = 436 }
+		436 = {
+			add_core_of = ZOM
+		}
+		ZOM = {
+			load_oob = "ZOM_1936_india"
+		}
+		ZOM = {
+			delete_unit_template_and_units = { division_template = "Infantry Division" }
+			delete_unit_template_and_units = { division_template = "District Garrison" }
+			delete_unit_template_and_units = { division_template = "步兵师1936B型" }
+			delete_unit_template_and_units = { division_template = "步兵师1936A型" }
+			delete_unit_template_and_units = { division_template = "轻型坦克师1936A型" }
+		}
+	}
+}
+
+#####RANDOM#####
+
+country_event = {
+	id = Zombiestart.3
+	title = "Zombiestart.3.name"
+	desc = "Zombiestart.3.desc"
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = ZOM_spawn
+			option = RANDOM
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		random_list = {
+			#### TURKEY ####
+			25 = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = NORMAL
+						}
+					}
+					country_event = { id = Zombiestart.4 days = 1 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = ONE_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.4 days = 365 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = TWO_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.4 days = 730 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = THREE_YEARS
+						}
+					}
+					country_event = { id = Zombiestart.4 days = 1095 }
+				}
+				set_global_flag = zom_turkey
+			}
+			#### INDIA ####
+			25 = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = NORMAL
+						}
+					}
+					country_event = { id = Zombiestart.2 days = 1 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = ONE_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.2 days = 365 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = TWO_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.2 days = 730 }
+				}	
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = THREE_YEARS
+						}
+					}
+					country_event = { id = Zombiestart.2 days = 1095 }
+				}
+				set_global_flag = zom_india
+			}
+			#### TUNIS ####
+			25 = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = NORMAL
+						}
+					}
+					country_event = { id = Zombiestart.6 days = 1 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = ONE_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.6 days = 365 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = TWO_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.6 days = 730 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = THREE_YEARS
+						}
+					}
+					country_event = { id = Zombiestart.6 days = 1095 }
+				}
+				set_global_flag = zom_tunis
+			}
+
+			#### SWEDEN ####
+			25 = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = NORMAL
+						}
+					}
+					country_event = { id = Zombiestart.8 days = 1 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = ONE_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.8 days = 365 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = TWO_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.8 days = 730 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = THREE_YEARS
+						}
+					}
+					country_event = { id = Zombiestart.8 days = 1095 }
+				}
+				set_global_flag = zom_sweden
+			}
+
+			#### RUSSIA ####
+			25 = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = NORMAL
+						}
+					}
+					country_event = { id = Zombiestart.10 days = 1 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = ONE_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.10 days = 365 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = TWO_YEAR
+						}
+					}
+					country_event = { id = Zombiestart.10 days = 730 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = Zombie_spawn
+							option = THREE_YEARS
+						}
+					}
+					country_event = { id = Zombiestart.10 days = 1095 }
+				}
+				set_global_flag = zom_russia
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = Zombiestart.4
+	title = "Zombiestart.4.name"
+	desc = "Zombiestart.4.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = Namnamnam
+		349 = {
+			add_core_of = ZOM
+		}
+		ZOM = { transfer_state = 349 }
+		ZOM = {
+		delete_unit_template_and_units = { division_template = "Piyade Tümeni" }
+		delete_unit_template_and_units = { division_template = "Bogazi Tugay" }
+		delete_unit_template_and_units = { division_template = "Dag Tugayi" }
+		delete_unit_template_and_units = { division_template = "Zirhli Tümeni" }
+		delete_unit_template_and_units = { division_template = "Süvari Tümeni" }
+		delete_unit_template_and_units = { division_template = "步兵师1936A型" }
+		delete_unit_template_and_units = { division_template = "轻型坦克师1936A型" }
+		}
+		ZOM = {
+			load_oob = "ZOM_1936_turkey"
+		}
+	}
+}
+
+#####TUNIS#####
+
+country_event = {
+	id = Zombiestart.6
+	title = "Zombiestart.6.name"
+	desc = "Zombiestart.6.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = Namnamnam
+		665 = {
+			add_core_of = ZOM
+		}
+		ZOM = { transfer_state = 665 }
+		ZOM = {
+			delete_unit_template_and_units = { division_template = "Division d'Infanterie" }
+			delete_unit_template_and_units = { division_template = "Division Coloniale" }
+			delete_unit_template_and_units = { division_template = "Division d'Infanterie Motorisée" }
+			delete_unit_template_and_units = { division_template = "Division d'Infanterie Alpine" }
+			delete_unit_template_and_units = { division_template = "Division de Cavalerie" }
+			delete_unit_template_and_units = { division_template = "Division Légère Mécanique" }
+			delete_unit_template_and_units = { division_template = "Brigade de Chars de Combat" }
+			delete_unit_template_and_units = { division_template = "Brigade Coloniale" }
+			delete_unit_template_and_units = { division_template = "步兵师1936A型" }
+			delete_unit_template_and_units = { division_template = "轻型坦克师1936A型" }
+		}
+		ZOM = {
+			load_oob = "ZOM_1936_tunis"
+		}
+	}
+}
+
+#####SWEDEN#####
+
+country_event = {
+	id = Zombiestart.8
+	title = "Zombiestart.8.name"
+	desc = "Zombiestart.8.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = Namnamnam
+		918 = {
+			add_core_of = ZOM
+		}
+		ZOM = { transfer_state = 918 }
+		ZOM = {
+			delete_unit_template_and_units = { division_template = "Militärområde" }
+			delete_unit_template_and_units = { division_template = "Kavalleribrigaden" }
+			delete_unit_template_and_units = { division_template = "Pansarregemente" }
+			delete_unit_template_and_units = { division_template = " Pansarregemente" } #P社怎TM会有空格在这
+			delete_unit_template_and_units = { division_template = "Militärområde" }
+			delete_unit_template_and_units = { division_template = "Arméfördelning" }
+			delete_unit_template_and_units = { division_template = "步兵师1936A型" }
+			delete_unit_template_and_units = { division_template = "轻型坦克师1936A型" }
+		}
+		ZOM = {
+			load_oob = "ZOM_1936_sweden"
+		}
+	}
+}
+
+#####RUSSIA#####
+
+country_event = {
+	id = Zombiestart.10
+	title = "Zombiestart.10.name"
+	desc = "Zombiestart.10.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = Namnamnam
+
+		516 = { add_core_of = ZOM }
+		644 = { add_core_of = ZOM }
+		575 = { add_core_of = ZOM }
+		576 = { add_core_of = ZOM }
+
+		ZOM = { transfer_state = 516 }
+		ZOM = { transfer_state = 644 }
+		ZOM = { transfer_state = 575 }
+		ZOM = { transfer_state = 576 }
+		ZOM = { transfer_state = 878 }
+		ZOM = { transfer_state = 876 }
+		ZOM = { transfer_state = 877 }
+		ZOM = { transfer_state = 574 }
+		ZOM = { transfer_state = 565 }
+		ZOM = { transfer_state = 564 }
+
+		ZOM = {
+			delete_unit_template_and_units = { division_template = "Strelkovaya Diviziya" }
+			delete_unit_template_and_units = { division_template = "Gornostrelkovaya Diviziya" }
+			delete_unit_template_and_units = { division_template = "Motostrelkovaya Diviziya" }
+			delete_unit_template_and_units = { division_template = "Kavaleriyskaya Diviziya" }
+			delete_unit_template_and_units = { division_template = "Mekhanizirovaniy Korpus" }
+			delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+			delete_unit_template_and_units = { division_template = "NKVD Pogranichnaya Diviziya" }
+			delete_unit_template_and_units = { division_template = "步兵师1936A型" }
+			delete_unit_template_and_units = { division_template = "轻型坦克师1936A型" }
+		}
+		ZOM = {
+			load_oob = "ZOM_1936_russia"
+		}
+	}
+}
+
+
+#####INFECTION######
+
+country_event = {
+	id = Zombiestart.11
+	title = "Zombiestart.11.name"
+	desc = "Zombiestart.11.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = ZOM_spawn
+			option = INFECTION
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = Zombie_spawn
+					option = NORMAL
+				}
+			}
+			country_event = { id = Zombiestart.12 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = Zombie_spawn
+					option = ONE_YEAR
+				}
+			}
+			country_event = { id = Zombiestart.12 days = 365 }  
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = Zombie_spawn
+					option = TWO_YEAR
+				}
+			}
+			country_event = { id = Zombiestart.12 days = 730 }  
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = Zombie_spawn
+					option = THREE_YEARS
+				}
+			}
+			country_event = { id = Zombiestart.12 days = 1095 }
+		}
+	}
+
+	option = {
+		name = Namnamnam
+		173 = {
+			add_core_of = ZOM
+		}
+		169 = {
+			add_core_of = ZOM
+		}
+		789 = {
+			add_core_of = ZOM
+		}
+		170 = {
+			add_core_of = ZOM
+		}
+		292 = {
+			add_core_of = ZOM
+		}
+		679 = {
+			add_core_of = ZOM
+		}
+		678 = {
+			add_core_of = ZOM
+		}
+		659 = {
+			add_core_of = ZOM
+		}
+		293 = {
+			add_core_of = ZOM
+		}
+		294 = {
+			add_core_of = ZOM
+		}
+		658 = {
+			add_core_of = ZOM
+		}
+		765 = {
+			add_core_of = ZOM
+		}
+		675 = {
+			add_core_of = ZOM
+		}
+		291 = {
+			add_core_of = ZOM
+		}
+		676 = {
+			add_core_of = ZOM
+		}
+		680 = {
+			add_core_of = ZOM
+		}
+		677 = {
+			add_core_of = ZOM
+		}
+		554 = {
+			add_core_of = ZOM
+		}
+		553 = {
+			add_core_of = ZOM
+		}
+		455 = {
+			add_core_of = ZOM
+		}
+		498 = {
+			add_core_of = ZOM
+		}
+		497 = {
+			add_core_of = ZOM
+		}
+		499 = {
+			add_core_of = ZOM
+		}
+		304 = {
+			add_core_of = ZOM
+		}
+		685 = {
+			add_core_of = ZOM
+		}
+		316 = {
+			add_core_of = ZOM
+		}
+		317 = {
+			add_core_of = ZOM
+		}
+		312 = {
+			add_core_of = ZOM
+		}
+		set_global_flag = zom_infection
+	}
+}
+
+country_event = {
+	id = Zombiestart.12
+	title = "Zombiestart.12.name"
+	desc = "Zombiestart.12.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = Namnamnam
+		every_country = {
+			release = ZOM 
+		}
+		ZOM = {
+			load_oob = "ZOM_1936_infection"
+		}
+	}
+}
+
+
+

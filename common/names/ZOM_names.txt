@@ -1,0 +1,8 @@
+ZOM = {
+	male = {
+		names = { 僵尸 }
+	}
+	female = {
+		names = { 僵尸 }
+	}
+}

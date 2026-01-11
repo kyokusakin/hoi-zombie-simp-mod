@@ -1,0 +1,1183 @@
+
+add_namespace = Zombieevents
+
+country_event = {
+	id = Zombieevents.1
+	title = "Zombieevents.1.name"
+	desc = "Zombieevents.1.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		AND = {
+			date > 1937.04.20
+			GER = { 
+				has_government = fascism 
+				has_country_leader = {
+					name = "Adolf Hitler"
+					ruling_only = yes
+				}
+			}
+			ITA = { 
+				has_government = fascism 
+				has_country_leader = {
+					name = "Benito Mussolini"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	option = {
+		hidden_effect = {
+				country_event = { days = 1 id = Zombienews.1 }
+		}
+	}
+}
+
+country_event = {
+	id = Zombieevents.2
+	title = "Zombieevents.2.name"
+	desc = "Zombieevents.2.desc"
+	picture = GFX_event_mussolini
+	fire_only_once = yes
+	hidden = yes
+	
+
+	trigger = {
+		AND = {
+			date > 1938.1.1 
+			ITA = { 
+				has_government = fascism 
+				has_country_leader = {
+					name = "Benito Mussolini"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		hidden_effect = {
+				country_event = { days = 1 id = Zombienews.2 }
+		}
+	}
+}
+
+country_event = {
+	id = Zombieevents.3
+	title = "Zombieevents.3.name"
+	desc = "Zombieevents.3.desc"
+	picture = GFX_event_goering
+	fire_only_once = yes
+	major = yes
+	hidden = yes
+	
+	trigger = {
+		AND ={
+			tag = GER
+			GER = { 
+				has_government = fascism 
+			}
+			ZOM = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 500 }
+	
+	option = {
+		hidden_effect = {
+			country_event = { id = Zombieevents.4 days=100}
+			country_event = { days = 1 id = Zombienews.3 }
+		}
+	}
+}
+
+country_event = {
+	id = Zombieevents.4
+	title = "Zombieevents.4.name"
+	desc = "Zombieevents.4.desc"
+	picture = GFX_country_event_german_volunteers
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		AND ={
+			tag = GER
+			GER = { 
+				has_government = fascism 
+			}
+		}
+	}
+	
+	option = {
+		hidden_effect = {
+		country_event = { days = 1 id = Zombienews.4 }
+			ZOM = {
+				if = {
+					limit = {
+						AND = {
+							NOT = { has_war_with = ENG }
+						}
+					}
+				}
+			ZOM={
+				load_oob = "ZOM_germany"
+				declare_war_on = {
+					type = take_state_focus
+					target = GER	
+				}
+			}
+			}
+		}
+	}
+	
+}
+
+country_event = {
+    id = Zombieevents.5
+    title = "Zombieevents.5.name"
+    desc = "Zombieevents.5.desc"
+    picture = GFX_country_event_japanese_parade
+    fire_only_once = yes
+    hidden = yes
+    is_triggered_only = yes
+
+
+    immediate = {   
+		country_event = { 
+			random_days = 300
+			id = Zombienews.5 
+		}
+    }
+
+}
+country_event = {
+	id = Zombieevents.6
+	title = "Zombieevents.6.name"
+	desc = "Zombieevents.6.desc"
+	picture = GFX_country_event_japanese_army_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		tag =JAP
+	}
+	
+	option ={
+		hidden_effect = {
+				country_event = { days = 1 id = Zombienews.6 }
+		}	
+	}
+}
+
+country_event = {
+	id = Zombieevents.7
+	title = "Zombieevents.7.name"
+	desc = "Zombieevents.7.desc"
+	picture = GFX_country_event_japanese_army_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+	}
+	
+	option ={
+		hidden_effect = {
+				country_event = { days = 1 id = Zombienews.8 }
+		}	
+	}
+	option ={
+		hidden_effect = {
+			JAP = {
+				country_event = { days = 1 id = Zombienews.54 }
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = Zombieevents.9
+	title = "Zombieevents.9.name"
+	desc = "Zombieevents.9.desc"
+	picture = GFX_country_event_indian_parade
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		RAJ ={ has_war_with = ZOM}
+		has_global_flag = zom_india
+	}
+	
+	mean_time_to_happen = { days = 30 }
+	option = {
+		hidden_effect = {
+			country_event = { days = 1 id = Zombienews.9}
+			RAJ ={
+				load_oob = "RAJ_Miliz"	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Zombieevents.10
+	title = "Zombieevents.10.name"
+	desc = "Zombieevents.10.desc"
+	picture = GFX_event_churchill
+	fire_only_once = yes
+	major = yes
+	hidden = yes
+	
+	trigger = {
+		date > 1938.1.1	
+		GER = { 
+			has_government = democratic 
+		}		
+	}
+	
+	mean_time_to_happen = { days = 300 }
+	
+	option = {
+		hidden_effect = {
+			country_event = { days = 1 id = Zombienews.10}
+		}
+	}
+}
+
+country_event = {
+	id = Zombieevents.12
+	title = "Zombieevents.12.name"
+	desc = "Zombieevents.12.desc"
+	picture = GFX_country_event_stalin_meeting
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			SOV ={ has_war_with = ZOM}
+			SOV ={
+				has_government = communism
+				has_country_leader = {
+					name = "Joseph Stalin"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	option = {
+		hidden_effect = {
+			country_event = { days = 1 id = Zombienews.12}
+			SOV={
+				add_political_power = 120
+				add_war_support = 0.1
+				add_manpower = 100000
+			}
+	}	}		
+}
+
+country_event = {
+	id = Zombieevents.13
+	title = "Zombieevents.13.name"
+	desc = "Zombieevents.13.desc"
+	picture = GFX_country_event_stalin_meeting
+	fire_only_once = yes
+	major = yes
+	hidden = yes
+	
+	trigger = {
+		ZCO = { exists = yes }
+	}
+	immediate = {
+		ZCO = {
+			create_faction = "反僵尸联盟"
+		}
+		set_global_flag = doomsday_zombie
+	}
+}
+
+
+country_event = {
+	id = Zombieevents.14
+	title = "Zombieevents.14.name"
+	desc = "Zombieevents.14.desc"
+	picture = GFX_country_event_stalin_meeting
+	hidden = yes
+	
+	trigger = {
+		ZOM = { exists = yes }
+		ZCO = { exists = yes }
+	}
+	mean_time_to_happen = { days = 100 }
+	immediate = {
+		ZOM = {
+			send_equipment = {
+				target = ZCO
+				type = amphibious_mechanized_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = anti_tank_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = anti_air_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = armored_car_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = artillery_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = rocket_artillery_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = convoy
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = floating_harbor_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = guided_missile_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = infantry_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = mechanized_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = motorized_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = small_plane_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = cv_small_plane_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = medium_plane_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = large_plane_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = transport_plane_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = railway_gun_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = support_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = light_tank_chassis
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = medium_tank_chassis
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = heavy_tank_chassis
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = modern_tank_chassis
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = super_heavy_tank_chassis
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = amphibious_tank_chassis
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = train_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = jet_strat_bomber_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = jet_tac_bomber_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = rocket_interceptor_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = jet_fighter_equipment
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = small_plane_cas_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = small_plane_naval_bomber_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = cv_small_plane_naval_bomber_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = small_plane_suicide_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = cv_small_plane_suicide_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = medium_plane_scout_plane_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = large_plane_maritime_patrol_plane_airframe
+				amount = 10000
+			}
+			send_equipment = {
+				target = ZCO
+				type = medium_plane_fighter_airframe
+				amount = 10000
+			}
+		}
+	}
+		
+}
+
+country_event = {
+	id = Zombieevents.15
+	title = "Zombieevents.15.name"
+	desc = "Zombieevents.15.desc"
+	picture = GFX_country_event_indian_parade
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		RAJ ={ has_war_with = ZOM}
+		NOT = { has_global_flag = zom_india }
+	}
+	
+	option = {
+		hidden_effect = {
+			country_event = { days = 1 id = Zombienews.58}
+			RAJ ={
+				load_oob = "RAJ_Miliz"	
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Zombieevents.16
+	title = "Zombieevents.16.name"
+	desc = "Zombieevents.16.desc"
+	picture = GFX_country_event_indian_parade
+	hidden = yes
+	
+	trigger = {
+		ZOM ={ is_in_faction = yes }
+	}
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		ZOM = { leave_faction = yes }
+	}
+}
+
+country_event = {
+	id = Zombieevents.17
+	title = "Zombieevents.17.name"
+	desc = "Zombieevents.17.desc"
+	picture = GFX_country_event_indian_parade
+	hidden = yes
+	
+	trigger = {
+		ZOM ={amount_research_slots > 0}
+	}
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		ZOM = { add_research_slot = 0 }
+	}
+}
+
+#country_event = {
+#	id = Zombieevents.18
+#	title = "Zombieevents.18.name"
+#	desc = "Zombieevents.18.desc"
+#	picture = GFX_country_event_indian_parade
+#	hidden = yes
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		has_game_rule = {
+#			rule = ZOM_mutation
+#			option = MUTATION
+#		}
+#		date > 1938.06.01
+#	}
+#	
+#	mean_time_to_happen = { days = 2 }
+#	
+#	option = {
+#		country_event = { days = 1 id = Zombienews.60}
+#		country_event = { days = 1 id = Zombieevents.19}
+#		country_event = { days = 365 id = Zombieevents.20}
+#		ZOM = {
+#			set_technology = { zombietech2 = 1 }
+#			set_technology = { zombietech_air_1 = 1 }
+#			load_oob = "ZOM_mutation"
+#		}
+#		set_division_template_lock = {
+#			division_template = " 进化僵尸"
+#			is_locked = yes
+#		}
+#	}
+#}
+
+country_event = {
+	id = Zombieevents.19
+	title = "Zombieevents.19.name"
+	desc = "Zombieevents.19.desc"
+	picture = GFX_country_event_indian_parade
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = NORMAL
+				}
+				has_global_flag = zom_india
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_india"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = RANDOM
+				}
+				has_global_flag = zom_turkey
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_turkey"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = RANDOM
+				}
+				has_global_flag = zom_tunis
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_tunis"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = RANDOM
+				}
+				has_global_flag = zom_sweden
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_sweden"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = RANDOM
+				}
+				has_global_flag = zom_russia
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_russia"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = INFECTION
+				}
+				has_global_flag = zom_infection
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_infection"
+		}
+	}
+}
+
+#country_event = {
+#	id = Zombieevents.20
+#	title = "Zombieevents.20.name"
+#	desc = "Zombieevents.20.desc"
+#	picture = GFX_country_event_indian_parade
+#	hidden = yes
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	option = {
+#		country_event = { days = 1 id = Zombienews.60}
+#		country_event = { days = 1 id = Zombieevents.21}
+#		ZOM = {
+#			set_technology = { zombietech3 = 1}
+#			load_oob = "ZOM_mutation_better"
+#		}
+#		set_division_template_lock = {
+#			division_template = "超级僵尸"
+#			is_locked = yes
+#		}
+#	}
+#}
+
+country_event = {
+	id = Zombieevents.21
+	title = "Zombieevents.21.name"
+	desc = "Zombieevents.21.desc"
+	picture = GFX_country_event_indian_parade
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = NORMAL
+				}
+				has_global_flag = zom_india
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_better_india"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = RANDOM
+				}
+				has_global_flag = zom_turkey
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_better_turkey"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = RANDOM
+				}
+				has_global_flag = zom_tunis
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_better_tunis"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = RANDOM
+				}
+				has_global_flag = zom_sweden
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_better_sweden"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = RANDOM
+				}
+				has_global_flag = zom_russia
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_better_russia"
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				has_game_rule = {
+					rule = ZOM_spawn
+					option = INFECTION
+				}
+				has_global_flag = zom_infection
+			}
+		}
+		ZOM={
+			load_oob = "ZOM_mutation_better_infection"
+		}
+	}
+}
+
+
+country_event = {
+	id = Zombieevents.22
+	title = "Zombieevents.22.name"
+	desc = "Zombieevents.22.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		FRA = { exists = no }
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.62 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.23
+	title = "Zombieevents.23.name"
+	desc = "Zombieevents.23.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		AND = {
+			MEX={ has_war = no }
+			has_global_flag = flag_mexico_cedillo_has_revolted
+			date > 1937.01.01
+			RAJ ={ has_war_with = ZOM}
+		}
+		
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.63 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.24
+	title = "Zombieevents.24.name"
+	desc = "Zombieevents.24.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		SOV ={ has_war_with = ZOM }	
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.64 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.25
+	title = "Zombieevents.25.name"
+	desc = "Zombieevents.25.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		FIN ={ has_war_with = ZOM }	
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.65 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.26
+	title = "Zombieevents.26.name"
+	desc = "Zombieevents.26.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		HUN ={ has_war_with = ZOM }	
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.66 }
+	}
+}
+
+
+country_event = {
+	id = Zombieevents.27
+	title = "Zombieevents.27.name"
+	desc = "Zombieevents.27.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		PER ={ has_war_with = ZOM }	
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.67 }
+	}
+}
+
+country_event = {
+    id = Zombieevents.28
+    title = "Zombieevents.28.name"
+    desc = "Zombieevents.28.desc"
+    picture = GFX_event_mussolini_hitler
+    fire_only_once = yes
+    hidden = yes
+
+    trigger = { 
+        ZOM = { exists = yes }  
+    }
+
+    immediate = {
+		country_event = { 
+			id = Zombienews.57
+			random_days = 30			
+		}
+    }
+}
+
+country_event = {
+    id = Zombieevents.29
+    title = "Zombieevents.29.name"
+    desc = "Zombieevents.29.desc"
+    picture = GFX_event_mussolini_hitler
+    fire_only_once = yes
+    hidden = yes
+	
+    trigger = { 
+        OR = {
+            RAJ = {
+                has_capitulated = yes
+            }
+            RAJ ={ exists = no }
+        }
+    }
+
+    immediate = {
+        country_event = { id = Zombienews.69 }
+    }
+}
+
+country_event = {
+	id = Zombieevents.30
+	title = "Zombieevents.30.name"
+	desc = "Zombieevents.30.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		SOV ={ exists = no }	
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.70 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.31
+	title = "Zombieevents.31.name"
+	desc = "Zombieevents.31.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		FRA ={ exists = no }	
+	}
+	immediate = {
+		country_event = { id = Zombienews.71 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.32
+	title = "Zombieevents.32.name"
+	desc = "Zombieevents.32.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		GER ={ exists = no }	
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.72 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.33
+	title = "Zombieevents.33.name"
+	desc = "Zombieevents.33.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		JAP ={ exists = no }	
+	}
+	
+	immediate = {
+		country_event = { id = Zombienews.74 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.34
+	title = "Zombieevents.34.name"
+	desc = "Zombieevents.34.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		USA ={ exists = no }	
+	}
+	immediate = {
+		country_event = { id = Zombienews.75 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.35
+	title = "Zombieevents.35.name"
+	desc = "Zombieevents.35.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		ENG ={ exists = no }	
+	}
+	immediate = {
+		country_event = { id = Zombienews.73 }
+	}
+}
+
+country_event = {
+	id = Zombieevents.36
+	title = "Zombieevents.36.name"
+	desc = "Zombieevents.36.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		AND = {
+			date > 1938.01.01
+			CUB ={ has_war_with = ZOM}
+		}
+	}
+	immediate = {
+		country_event = { id = Zombienews.61 }
+	}
+}
+
+
+country_event = {
+	id = Zombieevents.37
+	title = "Zombieevents.37.name"
+	desc = "Zombieevents.37.desc"
+	picture = GFX_event_mussolini_hitler
+	hidden = yes
+	is_triggered_only = yes
+	
+
+	immediate = {
+		USA = {
+			load_oob = "USA_Special_forces"
+		}
+	}
+}
+
+country_event = {
+	id = Zombieevents.38
+	title = "Zombieevents.38.name"
+	desc = "Zombieevents.38.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		USA ={ has_war_with = ZOM}
+	}
+	immediate = {
+		USA = {
+			load_oob = "USA_Special_forces_template"
+		}
+	}
+}
+
+country_event = {
+	id = Zombieevents.39
+	title = "Zombieevents.39.name"
+	desc = "Zombieevents.39.desc"
+	picture = GFX_event_mussolini_hitler
+	hidden = yes
+	
+	trigger = { 
+		AND = {
+			has_game_rule = {
+				rule = Nations_capitulation
+				option = NO_CAPITULATION
+			}
+			has_war_with = ZOM
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+        every_country = {
+            limit = {
+				AND = {
+                	NOT = { tag = ZOM } 
+					has_war_with = ZOM
+				}
+            }
+            add_ideas = no_surrender 
+        }
+	}
+}
+
+country_event = {
+	id = Zombieevents.40
+	title = "Zombieevents.40.name"
+	desc = "Zombieevents.40.desc"
+	picture = GFX_event_mussolini_hitler
+	hidden = yes
+	
+	trigger = { 
+		AND ={
+			is_subject_of = ZOM
+			NOT = { TAG = ZOM }
+		}
+		
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		ZOM = {
+			annex_country = { target = ROOT transfer_troops = no}
+		}
+	}
+}
+
+#########ZCOM#########################
+
+ 

@@ -1,0 +1,2 @@
+ZOM = "countries/Zombies.txt"
+ZCO = "countries/ZCOM.txt"

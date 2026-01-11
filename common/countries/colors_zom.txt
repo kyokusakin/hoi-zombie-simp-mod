@@ -1,0 +1,9 @@
+ZOM= {
+  color = rgb { 0  0  0 }
+  color_ui = rgb { 0  0  0 }
+}
+
+ZCO= {
+  color = rgb { 255  255  255 }
+  color_ui = rgb { 255  255  255 }
+}

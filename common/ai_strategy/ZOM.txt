@@ -1,0 +1,178 @@
+zombies_bad = {
+	allowed = { always = yes }
+	enable = { NOT = { tag = ZOM } }
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ZOM"
+		value = -99
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ZOM"
+		value = 99
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ZOM
+		target = non_aggression_pact
+		value = -99
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ZOM
+		target = military_access
+		value = -99
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ZOM
+		target = send_attache
+		value = -99
+	}
+}
+
+zombie_grand_strategy = {
+    allowed = {
+        original_tag = ZOM
+    }
+    enable = {
+        always = yes
+    }
+    abort = {
+        always = no
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = infantry
+        value = -10000
+    }
+    ai_strategy = {
+        type = equipment_production_min_factories
+        id = infantry_equipment_0
+        value = -100
+    }
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = fly_zombie_0
+        value = 20
+    }
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = zombie
+        value = 20
+    }
+    ai_strategy = {
+        type = equipment_production_min_factories
+        id = fighter
+        value = 150
+    }
+    ai_strategy = { 
+        type = equipment_production_min_factories_archetype 
+        id = zombie
+        value = 20
+    }
+    ai_strategy = { 
+        type = equipment_production_min_factories_archetype 
+        id = zombiemutation 
+        value = 20
+    }
+    ai_strategy = { 
+        type = equipment_production_min_factories_archetype 
+        id = zombiebettermutation 
+        value = 20
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = fighter
+        value = 100   
+    }
+    ai_strategy = {
+        type = garrison
+        value = -1000
+    }
+    ai_strategy = {
+        type = front_control
+        area = ZOM_world
+        ordertype = front
+        execution_type = rush
+        manual_attack = yes
+        priority = 100
+    }
+    ai_strategy = { 
+        type = force_concentration_front_factor 
+        area = ZOM_world
+
+        ratio = 0
+
+        value = 100
+    }
+    ai_strategy = {
+        type = ignore_army_incompetence
+        value = 100
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 800
+    }
+    ai_strategy = {
+        type = build_army
+        id = ZOMBIE_role_0
+        value = 800
+    }
+    ai_strategy = {
+        type = build_army
+        id = ZOMBIE_role_1
+        value = 400
+    }
+    ai_strategy = {
+        type = build_army
+        id = ZOMBIE_role_2
+        value = 200
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = ZOMBIE_role_0
+        value = 20
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = ZOMBIE_role_1
+        value = 50
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = ZOMBIE_role_2
+        value = 100
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = armor_generic
+        value = -100
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = mountaineers_generic
+        value = -100
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = infantry_generic
+        value = -100
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = garrison_generic
+        value = -100
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = suppression_generic
+        value = -100
+    }
+#    ai_strategy = {
+#        type = min_wanted_supply_trains
+#        value = 300
+#    }
+}

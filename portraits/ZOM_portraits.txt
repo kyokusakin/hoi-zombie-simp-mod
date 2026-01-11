@@ -1,0 +1,26 @@
+﻿
+ZOM = {
+	male = {
+	    "GFX_ZOM_portraits"
+	}
+	female = {
+	    "GFX_ZOM_portraits"
+	}
+	
+	army = {
+	    male = {
+	        "GFX_ZOM_portraits"
+	    }
+	    female = {
+	        "GFX_ZOM_portraits"
+	    }
+	}
+	navy = {
+	    male = {
+	        "GFX_ZOM_portraits"
+	    }
+	    female = {
+	        "GFX_ZOM_portraits"
+	    }
+	}
+}

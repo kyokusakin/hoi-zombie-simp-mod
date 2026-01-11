@@ -1,0 +1,784 @@
+﻿units = {
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		name = "僵尸"
+		location = 1510
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+
+}
+
+### Starting Equipment ###
+instant_effect = {
+}

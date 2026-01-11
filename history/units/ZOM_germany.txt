@@ -1,0 +1,110 @@
+﻿units = {
+	division= {
+		name = "僵尸"
+		location = 266
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 266
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 266
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 266
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 266
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 266
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 281
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 281
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 281
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 281
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 348
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 348
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 348
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 395
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 3351
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 3380
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 3384
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "僵尸"
+		location = 6375
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+	}
+}

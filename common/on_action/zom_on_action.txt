@@ -1,0 +1,27 @@
+on_actions = {
+	
+	on_startup = {
+		effect = {
+			news_event = {id = Zombienews.57 days = 1}
+			ENG  = { 
+				country_event = Zombieevents.13
+			}
+		}
+	}
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { FROM = { tag = ZOM } }
+				FROM = {
+					annex_country = { target = ROOT } 
+				}
+			}
+			if = {
+				limit = { ROOT = { tag = ZOM } }
+				ROOT = {
+					annex_country = { target = FROM } 
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+﻿units = {
+	division = {
+		name = "反殭屍軍隊"
+		location = 11984
+		division_template = "反殭屍軍隊"
+		start_experience_factor = 0.3
+	}
+}

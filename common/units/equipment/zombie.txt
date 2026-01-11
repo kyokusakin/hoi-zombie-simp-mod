@@ -1,0 +1,189 @@
+# All infantry equipment
+
+equipments = {
+
+	zombie = {
+		year = 1936
+		is_archetype = yes
+		picture = zombietech_medium
+		is_buildable = no
+		type = armor
+		
+		interface_category = interface_category_armor
+		
+		#Misc Abilities
+		reliability = 1
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 10
+		hardness = 0
+		armor_value = 0
+		entrenchment = 0
+
+		#Offensive Abilities
+		soft_attack = 7
+		hard_attack = 0.7
+		ap_attack = 3
+		air_attack = 0.5
+
+		#Space taken in convoy
+		lend_lease_cost = 1000
+		
+		build_cost_ic = 3
+		resources = {
+		}
+		
+	}
+
+	zombie_0 = {
+		year = 2000
+	
+		archetype = zombie
+		picture = zombietech_medium	
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+		
+	zombiemutation = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = zombietech_medium2		
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		#Misc Abilities
+		reliability = 1
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 15
+		hardness = 0.05
+		armor_value = 20
+		entrenchment = 0
+
+		#Offensive Abilities
+		soft_attack = 18
+		hard_attack = 10
+		ap_attack = 65
+		air_attack = 2
+
+		#Space taken in convoy
+		lend_lease_cost = 1000
+		
+		build_cost_ic = 3
+		resources = {
+		}
+	}
+	zombiemutation_0 = {
+		year = 2000
+		archetype = zombiemutation
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+		
+	zombiebettermutation = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = zombietech_medium3		
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		#Misc Abilities
+		reliability = 1
+		maximum_speed = 8
+
+		#Defensive Abilities
+		defense = 35
+		breakthrough = 28
+		hardness = 0.25
+		armor_value = 55
+		entrenchment = 0
+
+		#Offensive Abilities
+		soft_attack = 30
+		hard_attack = 24
+		ap_attack = 120
+		air_attack = 5
+
+		#Space taken in convoy
+		lend_lease_cost = 1000
+		
+		build_cost_ic = 3
+		resources = {
+		}
+		
+	}
+	zombiebettermutation_0 = {
+		year = 2000
+		archetype = zombiebettermutation
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+#######################################################
+# AIR
+	fly_zombie = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = no
+		picture = fly_zombie_medium
+		is_buildable = no
+		type = fighter
+
+		group_by = archetype
+		sprite = light_plane
+		air_map_icon_frame = 1
+		interface_category = interface_category_air
+
+		air_attack = 55                         # Air Attack - amount of damage done against other planes
+		air_defence = 15                        # Air Defence - how many hits a plane takes before being shot down
+		air_range = 2500                         # Range - How far away missions the plane can perform
+		air_agility = 80                        # Agility - How agile a plane is. Agility effects how easy it is to hit another plane, and avoid being hit
+		air_ground_attack = 20                 # Ground Attack - damage done to ground forces during CAS missions
+		air_bombing = 10                       # Strategic Bombing - how good the plane is at bombing
+		air_superiority = 1                     # Air Superiority - How much the plane helps the overall air superiority of a strategic area
+		naval_strike_attack = 1.5               # Naval Attack - how much damage the plane does against ships
+		naval_strike_targetting = 0.5           # Naval Targeting - how likely the plane is to hit a ship
+		interface_overview_category_index = 1
+		maximum_speed = 400
+		reliability = 1
+
+		manpower = 2000
+		fuel_consumption = 0
+		build_cost_ic = 15
+		resources = {
+		}
+		allow_mission_type = {
+			training
+			air_superiority
+			interception
+			cas
+			naval_bomber
+			port_strike
+			strategic_bomber
+		}
+		lend_lease_cost = 1000
+	}
+
+	fly_zombie_0 = {
+		year = 2000
+		archetype = fly_zombie
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+}

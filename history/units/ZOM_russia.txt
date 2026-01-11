@@ -1,0 +1,132 @@
+﻿units = {
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "僵尸"
+		location = 7805
+		division_template = "僵尸"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+}

@@ -1,0 +1,14 @@
+﻿l_german:
+ zombie:0 "Zombievirus"
+ zombie_desc:0 "Der Virus verwandelt harmlose Menschen in hirnlose Monster."
+ zombie_0:0 "Zombievirus"
+ zombie_0_desc:0 "Der Virus verwandelt harmlose Menschen in hirnlose Monster."
+ zombiemutation:0 "Mutiertes Zombievirus"
+ zombiemutation_desc:0 "Dieses Virus ist mutiert und macht den Körper noch schneller und stärker."
+ zombiemutation_0:0 "Mutiertes Zombievirus"
+ zombiemutation_0_desc:0 "Dieses Virus ist mutiert und macht den Körper noch schneller und stärker."
+ zombiebettermutation:0 "Supervirus"
+ zombiebettermutation_desc:0 "Zombies dieser Generation sind unbesiegbare Kampfmaschinen."
+ zombiebettermutation_0:0 "Supervirus"
+ zombiebettermutation_0_desc:0 "Zombies dieser Generation sind unbesiegbare Kampfmaschinen."
+ 

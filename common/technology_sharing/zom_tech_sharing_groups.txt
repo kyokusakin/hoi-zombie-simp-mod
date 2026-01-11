@@ -1,0 +1,16 @@
+
+ technology_sharing_group = {
+
+	id = zcom_research
+	name = zcom_research_name
+	desc = zcom_research_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = ZCO
+        has_idea = doomsdaymember
+    }
+
+}

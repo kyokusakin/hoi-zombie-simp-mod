@@ -1,0 +1,8 @@
+﻿units = {
+	division = {
+		name = "雇佣兵"
+		location = 11984
+		division_template = "重坦雇佣兵"
+		start_experience_factor = 0.3
+	}
+}

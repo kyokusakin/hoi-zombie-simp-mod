@@ -1,0 +1,13 @@
+areas = {
+    ZOM_world = {
+        continents = {
+            europe
+            asia
+            africa
+            north_america
+            south_america
+            australia
+            middle_east
+        }
+    }
+}

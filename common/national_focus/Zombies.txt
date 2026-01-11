@@ -1,0 +1,72 @@
+focus_tree = {
+	id = zombie_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZOM
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no	
+
+
+	focus = {
+		id = focus_zombie_mutation_1
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 0
+		cost = 53
+
+		available_if_capitulated = yes
+		
+		available = {
+			has_game_rule = { rule = ZOM_MUTATION option = MUTATION }
+		}
+
+		completion_reward = {
+			country_event = { days = 1 id = Zombienews.60}
+			country_event = { days = 1 id = Zombieevents.19}
+			ZOM = {
+				set_technology = { zombietech2 = 1 }
+				set_technology = { zombietech_air_1 = 1 }
+				load_oob = "ZOM_mutation"
+			}
+			set_division_template_lock = {
+				division_template = " 进化僵尸"
+				is_locked = yes
+			}
+		}
+	}
+
+	focus = {
+		id = focus_zombie_mutation_2
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 1
+		cost = 53
+
+		prerequisite = { focus = focus_zombie_mutation_1 }
+
+		available_if_capitulated = yes
+
+		available = {
+			has_game_rule = { rule = ZOM_MUTATION option = MUTATION }
+		}
+
+		completion_reward = {
+			country_event = { days = 1 id = Zombienews.60}
+			country_event = { days = 1 id = Zombieevents.21}
+			ZOM = {
+				set_technology = { zombietech3 = 1}
+				load_oob = "ZOM_mutation_better"
+			}
+			set_division_template_lock = {
+				division_template = "超级僵尸"
+				is_locked = yes
+			}
+		}
+	}
+}
