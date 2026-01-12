@@ -37,9 +37,32 @@ focus_tree = {
 				set_technology = { zombietech_navy_3 = 1}
 				load_oob = "ZOM_mutation"
 			}
-			set_division_template_lock = {
-				division_template = " 进化僵尸"
-				is_locked = yes
+			ZOM = {
+				if = {
+					limit = {
+						has_game_rule = { rule = zombie_difficulty option = HARD }
+					}
+					add_offsite_building = { type = arms_factory level = 55 }
+					add_offsite_building = { type = dockyard level = 45 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = zombie_difficulty option = EXTREME }
+					}
+					add_offsite_building = { type = arms_factory level = 65 }
+					add_offsite_building = { type = dockyard level = 55 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = zombie_difficulty option = INSANE }
+					}
+					add_offsite_building = { type = arms_factory level = 75 }
+					add_offsite_building = { type = dockyard level = 65 }
+				}
+				set_division_template_lock = {
+					division_template = " 进化僵尸"
+					is_locked = yes
+				}
 			}
 		}
 	}
@@ -69,6 +92,33 @@ focus_tree = {
 			set_division_template_lock = {
 				division_template = "超级僵尸"
 				is_locked = yes
+			}
+			ZOM = {
+				if = {
+					limit = {
+						has_game_rule = { rule = zombie_difficulty option = HARD }
+					}
+					add_offsite_building = { type = arms_factory level = 55 }
+					add_offsite_building = { type = dockyard level = 45 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = zombie_difficulty option = EXTREME }
+					}
+					add_offsite_building = { type = arms_factory level = 65 }
+					add_offsite_building = { type = dockyard level = 55 }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = { rule = zombie_difficulty option = INSANE }
+					}
+					add_offsite_building = { type = arms_factory level = 75 }
+					add_offsite_building = { type = dockyard level = 65 }
+				}
+				set_division_template_lock = {
+					division_template = " 进化僵尸"
+					is_locked = yes
+				}
 			}
 		}
 	}

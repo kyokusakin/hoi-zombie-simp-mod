@@ -947,17 +947,12 @@ shared_focus = {
 	x = 7
 	y = 7
 	cost = 80
-	available = {
-	}
 	available_if_capitulated = yes
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	completion_reward = {
 		hidden_effect = {
 			ZOM = {
-				swap_ideas = {
-					remove_idea = Besser
-					add_idea = idea_antidote
-				}
+				add_ideas = idea_antidote
 			}
 		}
 		news_event = { id = antidote.1}

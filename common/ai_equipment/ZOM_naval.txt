@@ -1,0 +1,99 @@
+# AI Ship Designs for His Majesty the King
+
+ZOM_destroyers = {
+	category = naval
+	
+	available_for = {
+		ZOM
+	}
+	
+	roles = {
+		naval_screen
+	}
+	
+	priority = {
+		factor = 500
+	}
+	
+	destroyer_default = {
+		name = ZOM_DD
+		priority = {
+			factor = 500
+		}
+		enable = {
+			always = yes
+		}
+		role_icon_index = 2
+		
+		target_variant = {
+			match_value = 1000.0
+			
+			type = DD_zombie
+		}
+	}
+}
+ZOM_naval_light_cruiser = {
+	category = naval
+	
+	available_for = {
+		ZOM
+	}
+	
+	roles = {
+		naval_cruiser_light
+	}
+	
+	priority = {
+		factor = 500
+	}
+	
+	cruiser_light_default = {
+		name = ZOM_CL
+		priority = {
+			factor = 500
+		}
+		enable = {
+			always = yes
+		}
+		role_icon_index = 2
+		
+		target_variant = {
+			match_value = 1000.0
+			
+			type = CL_zombie
+		}
+	}
+}
+
+ZOM_naval_battleship = {
+	category = naval
+	
+	available_for = {
+		ZOM
+	}
+	
+	roles = {
+		naval_capital_bb
+	}
+	
+	priority = {
+		factor = 500
+	}
+	
+	battleship_default = {
+		name = ZOM_BB
+		priority = {
+			factor = 1000
+		}
+		enable = {
+			always = yes
+		}
+		role_icon_index = 2
+		
+		target_variant = {
+			match_value = 1000.0
+			
+			type = BB_zombie
+		}
+	}
+}

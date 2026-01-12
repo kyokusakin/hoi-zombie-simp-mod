@@ -1,0 +1,34 @@
+ZOM_dominance_fleet_1 = {
+	required_taskforces = {
+		ZOM_StrikeForce_1 = 1
+		ZOM_PatrolReconForce_1 = 3
+	}	
+	optional_taskforces = {
+		ZOM_StrikeForce_1 = 1
+		ZOM_PatrolReconForce_1 = 3
+	}
+}
+
+ZOM_raiding_fleet_2 = {
+	required_taskforces = {
+		ZOM_ConvoySurfaceRaiding_1 = 2
+	}	
+	optional_taskforces = {
+		ZOM_ConvoySurfaceRaiding_1 = 4
+	}
+}
+
+ZOM_escort_fleet_3 = {
+	required_taskforces = {
+		ZOM_ConvoyEscort_1 = 2
+	}
+	optional_taskforces = {
+		ZOM_ConvoyEscort_1 = 2
+	}
+}
+
+ZOM_minelaying_fleet_4 = {
+	required_taskforces = {
+		ZOM_ConvoyEscort_1 = 1
+	}
+}

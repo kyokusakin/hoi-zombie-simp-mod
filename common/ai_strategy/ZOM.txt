@@ -50,44 +50,44 @@ zombie_grand_strategy = {
     }
     ai_strategy = {
         type = equipment_production_min_factories
-        id = infantry_equipment_0
+        id = infantry
         value = -100
     }
     ai_strategy = {
-        type = equipment_variant_production_factor
-        id = fly_zombie_0
-        value = 20
+        type = equipment_production_min_factories
+        id = capital_ship
+        value = 40
     }
     ai_strategy = {
         type = equipment_variant_production_factor
-        id = zombie
-        value = 20
+        id = fly_zombie
+        value = 100
     }
+#    ai_strategy = {
+#        type = equipment_variant_production_factor
+#        id = zombie
+#        value = 20
+#    }
     ai_strategy = {
         type = equipment_production_min_factories
         id = fighter
         value = 150
     }
-    ai_strategy = { 
-        type = equipment_production_min_factories_archetype 
-        id = zombie
-        value = 20
-    }
-    ai_strategy = { 
-        type = equipment_production_min_factories_archetype 
-        id = zombiemutation 
-        value = 20
-    }
-    ai_strategy = { 
-        type = equipment_production_min_factories_archetype 
-        id = zombiebettermutation 
-        value = 20
-    }
-    ai_strategy = {
-        type = equipment_production_factor
-        id = fighter
-        value = 100   
-    }
+#    ai_strategy = { 
+#        type = equipment_production_min_factories_archetype 
+#        id = zombie
+#        value = 20
+#    }
+#    ai_strategy = { 
+#        type = equipment_production_min_factories_archetype 
+#        id = zombiemutation 
+#        value = 20
+#    }
+#    ai_strategy = { 
+#        type = equipment_production_min_factories_archetype 
+#        id = zombiebettermutation 
+#        value = 20
+#    }
     ai_strategy = {
         type = garrison
         value = -1000
@@ -176,7 +176,30 @@ zombie_grand_strategy = {
         id = screen_ship 
         value = 200 
     }
-
+    ai_strategy = {
+        type = role_ratio
+        id = naval_screen
+        value = 50
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = naval_cruiser_light
+        value = 50
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = naval_capital_bb
+        value = 50
+    }
+    ai_strategy = {
+        type = build_ship
+        id = capital_ship
+        value = 50
+    }
+    ai_strategy = {
+        type = naval_invasion_focus
+        value = 100
+    }
 #    ai_strategy = {
 #        type = min_wanted_supply_trains
 #        value = 300

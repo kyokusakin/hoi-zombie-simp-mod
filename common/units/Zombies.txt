@@ -93,7 +93,7 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = {
-			attack = -0.3
+			attack = -0.15
 		}
 	}
 	Zombies2 = {
@@ -137,7 +137,7 @@ sub_units = {
 			zombiemutation_0 = 1
 		}
 		river = {
-			attack = 0.15
+			attack = 0.25
 			movement = -0.2
 		}
 		hills = {
@@ -184,7 +184,7 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = {
-			attack = -0.05
+			attack = 0.15
 		}
 	}
 	Zombies3 = {
@@ -229,7 +229,7 @@ sub_units = {
 		}
 
 		river = {
-			attack = 0.25
+			attack = 0.35
 			movement = -0.2
 		}
 		hills = {
@@ -276,7 +276,7 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = {
-			attack = 0.1
+			attack = 0.25
 		}
 	}
 #######################################################

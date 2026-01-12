@@ -46,6 +46,7 @@ ideas = {
 				encryption = 1000
 				crypto_strength = 100
 				intelligence_agency_defense = 100
+				energy_gain_factor = 10
 			}
 		}
 		HARD_Besser= {

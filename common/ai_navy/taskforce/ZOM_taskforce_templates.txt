@@ -1,0 +1,101 @@
+ZOM_StrikeForce_1 = {
+	allowed = {
+		original_tag = ZOM 
+	}
+	ai_will_do = {
+		factor = 1
+	}	
+	mission = { naval_strike }
+	min_composition = {
+		zombie_navy_BB = {
+			amount = 2
+		}
+		zombie_navy_CL = {
+			amount = 8
+		}
+		zombie_navy_DD = {
+			amount = 16
+		}
+	}
+	
+	optimal_composition = {
+		zombie_navy_BB = {
+			amount = 8
+		}
+		zombie_navy_CL = {
+			amount = 32
+		}
+		zombie_navy_DD = {
+			amount = 100
+
+		}
+	}
+}
+
+ZOM_PatrolReconForce_1 = {
+	allowed = {
+		original_tag = ZOM
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	mission = { naval_patrol }
+	min_composition = {
+		zombie_navy_CL = {
+			amount = 1
+		}
+	}	
+	optimal_composition = {
+		zombie_navy_CL = {
+			amount = 3
+		}
+		zombie_navy_DD = {
+			amount = 12
+		}
+	}
+}
+
+ZOM_ConvoySurfaceRaiding_1 = {
+	allowed = {
+		original_tag = ZOM
+	}
+	ai_will_do = {
+		factor = 1
+	}	
+	mission = { convoy_raiding }
+	min_composition = {
+		zombie_navy_CL = {
+			amount = 1
+		}
+	}
+
+	optimal_composition = {
+		zombie_navy_CL = {
+			amount = 2
+		}
+		zombie_navy_DD = {
+			amount = 6
+		}
+	}
+}
+
+ZOM_ConvoyEscort_1 = {
+	allowed = {
+		original_tag = ZOM
+	}
+	ai_will_do = {
+		factor = 5
+	}	
+	mission = { convoy_escort }
+	min_composition = {
+		zombie_navy_DD = {
+			amount = 5
+		}
+	}
+	
+	optimal_composition = {
+		zombie_navy_DD = {
+			amount = 10
+		}
+	}
+}

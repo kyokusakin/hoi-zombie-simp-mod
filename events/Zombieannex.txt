@@ -1,39 +1,52 @@
 
 add_namespace = Zombieannex
 
-#country_event = {
-#	id = Zombieannex.1
-#	title = "Zombieannex.1.name"
-#	desc = "Zombieannex.1.desc"
-#	hidden=yes
-#
-#	trigger = {
-#		has_capitulated = yes
-#		has_war_with = ZOM 
-#		NOT = { has_war_with = ENG}
-#		NOT = { has_war_with = GER}
-#		NOT = { has_war_with = SOV}
-#		NOT = { has_war_with = USA}
-#		NOT = { has_war_with = JAP}
-#		NOT = { has_war_with = CHI}
-#		NOT = { has_war_with = ITA}
-#		NOT = { has_war_with = SPR}
-#		NOT = { has_war_with = POL}
-#		NOT = { has_war_with = FRA}
-#		NOT = { has_war_with = D01}
-#	}
-#	mean_time_to_happen = { days = 5 }
-#
-#	option = {
-#		name = Namnamnam
-#		
-#			ZOM={
-#				annex_country = { target = ROOT transfer_troops = no }
-#			}
-#	}
-#}
+country_event = {
+	id = Zombieannex.1
+	title = "Zombieannex.1.name"
+	desc = "Zombieannex.1.desc"
+	hidden=yes
 
+	trigger = {
+		is_puppet_of = ZOM
+	}
+	mean_time_to_happen = { days = 30 }
 
+	option = {
+		name = Namnamnam
+			ZOM={
+				annex_country = { target = ROOT transfer_troops = no }
+			}
+	}
+}
+country_event = {
+	id = Zombieannex.2
+	title = "Zombieannex.2.name"
+	desc = "Zombieannex.2.desc"
+	hidden=yes
 
+	trigger = {
+		NOT = { original_tag = ZCO }
+        NOT = { original_tag = ZOM }
+        country_exists = ZCO
+        ROOT = {
+            any_allied_country = {
+                tag = ZCO
+            }
+        }
+        is_major = no
+        OR = {
+            has_capitulated = yes
+            surrender_progress > 0.9
+        }
+        is_ai = yes
+	}
+	mean_time_to_happen = { days = 14 }
 
-
+	option = {
+		name = Namnamnam
+		ZCO={
+			annex_country = { target = ROOT transfer_troops = yes }
+		}
+	}
+}
