@@ -10,6 +10,8 @@ equipments = {
 		type = armor
 		
 		interface_category = interface_category_armor
+
+		max_military_factories = 50
 		
 		#Misc Abilities
 		reliability = 1
@@ -55,6 +57,8 @@ equipments = {
 		group_by = archetype
 		
 		interface_category = interface_category_armor
+
+		max_military_factories = 50
 		
 		#Misc Abilities
 		reliability = 1
@@ -90,12 +94,14 @@ equipments = {
 		year = 1936
 	
 		is_archetype = yes
-		picture = zombietech_medium3		
+		picture = zombietech_medium3
 		is_buildable = no
 		type = armor
 		group_by = archetype
 		
 		interface_category = interface_category_armor
+
+		max_military_factories = 50
 		
 		#Misc Abilities
 		reliability = 1
@@ -134,6 +140,7 @@ equipments = {
 		is_archetype = yes
 		is_convertable = no
 		picture = fly_zombie_medium
+		is_frame = no
 		is_buildable = no
 		type = fighter
 
@@ -182,10 +189,15 @@ equipments = {
 	#######################################################
 	# NAVAL
 	DD_zombie = {
-		year = 1933
+		year = 1944
 		is_archetype = yes
 		is_convertable = no
+		can_license = no
 		sprite = destroyer
+		interface_category = interface_category_screen_ships
+		picture = advanced_destroyer
+		alias = destroyer
+		is_frame = no
 		is_buildable = no
 		priority = 2000
 		type = { screen_ship }
@@ -209,23 +221,109 @@ equipments = {
 		max_strength = 63 # HP
 
 		manpower = 100000
+		fuel_consumption = 0
 		build_cost_ic = 800
-		lend_lease_cost = 2000
+		naval_dominance_factor = 50
+		naval_weather_penalty_factor = 0
+
+		upgrades = {
+			ship_torpedo_upgrade
+			destroyer_engine_upgrade
+			ship_ASW_upgrade
+			ship_anti_air_upgrade
+		}
+
+		module_slots = {
+			fixed_ship_battery_slot = {
+				required = no
+				allowed_module_categories = { ship_light_battery dp_light_battery}
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system ship_sonar }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar ship_sonar }
+			}
+			fixed_ship_torpedo_slot = {
+				required = no
+				allowed_module_categories = { ship_torpedo }
+			}
+			fixed_ship_engine_slot = {
+				required = no
+				allowed_module_categories = { light_ship_engine }
+			}
+
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_mine_warfare
+					ship_mine_layer
+					ship_anti_air
+					ship_depth_charge
+					ship_seaplane_tender
+				}
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_mine_warfare
+					ship_mine_layer
+					ship_anti_air
+					ship_depth_charge
+				}
+			}			
+		}
+		
+		module_count_limit = {
+			category = ship_radar
+			count < 2
+		}
+		
+		module_count_limit = {
+			category = ship_sonar
+			count < 2
+		}
+		
+		default_modules = {
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
 	}
 	DD_zombie_0 = {
-		year = 2000
+		year = 1944
 		archetype = DD_zombie
 		active = no
-		priority = 05
-		visual_level = 0
+		priority = 5000
+		visual_level = 1
+		module_slots = inherit
+		naval_dominance_factor = 50
 	}
 
 	CL_zombie = {
-		year = 1933
+		year = 1944
 
 		is_archetype = yes
 		is_convertable = no
+		can_license = no
 		sprite = light_cruiser
+		alias = light_cruiser
+		interface_category = interface_category_screen_ships
+		picture = advanced_battlecruiser
+		is_frame = no
 		is_buildable = no
 		priority = 2000
 		type = { screen_ship }
@@ -249,26 +347,117 @@ equipments = {
 		max_strength = 180 # HP
 
 		manpower = 400000
+		fuel_consumption = 0
 		build_cost_ic = 3800
+		naval_dominance_factor = 200
+		naval_weather_penalty_factor = 0
 
-		lend_lease_cost = 2000
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		module_slots = {
+			fixed_ship_battery_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_battery }
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_engine_slot = {
+				required = no
+				allowed_module_categories = { heavy_ship_engine }
+			}
+			fixed_ship_secondaries_slot = {
+				required = no
+				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }	
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
+		}
+		
+		module_count_limit = {
+			category = ship_radar
+			count < 2
+		}
+		
+		default_modules = {
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
 	}
 	CL_zombie_0 = {
-		year = 2000
+		year = 1944
 		archetype = CL_zombie
 		active = no
-		priority = 05
-		visual_level = 0
+		priority = 5000
+		visual_level = 1
+		module_slots = inherit
+		naval_dominance_factor = 200
 	}
 
 	BB_zombie = {
-		year = 1933
+		year = 1944
 
 		is_archetype = yes
 		is_convertable = no
+		can_license = no
 		
 		sprite = battleship
+		interface_category = interface_category_capital_ships
+		picture = advanced_battleship
 		is_buildable = no
+		is_frame = no
 		priority = 2000
 		type = { capital_ship }
 
@@ -291,14 +480,101 @@ equipments = {
 		max_strength = 517 # HP
 
 		manpower = 800000
+		fuel_consumption = 0
+		naval_dominance_factor = 400
+		naval_weather_penalty_factor = 0
 		build_cost_ic = 5800
-		lend_lease_cost = 2000
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		module_slots = {
+			fixed_ship_battery_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_battery }
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_engine_slot = {
+				required = no
+				allowed_module_categories = { heavy_ship_engine }
+			}
+			fixed_ship_secondaries_slot = {
+				required = no
+				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+			}
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }	
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+					ship_secondaries
+					ship_dp_secondaries
+				}
+			}
+		}
+		
+		module_count_limit = {
+			category = ship_radar
+			count < 2
+		}
+		
+		default_modules = {
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
 	}
 	BB_zombie_0 = {
-		year = 2000
+		year = 1944
 		archetype = BB_zombie
 		active = no
-		priority = 05
-		visual_level = 0
+		priority = 5000
+		visual_level = 1
+		module_slots = inherit
+		naval_dominance_factor = 200
 	}
 }

@@ -1,5 +1,7 @@
 ﻿division_template = {
 	name = "反殭屍軍隊"
+	is_locked = yes
+	force_allow_recruiting = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }

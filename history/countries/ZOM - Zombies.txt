@@ -1,4 +1,5 @@
-﻿set_research_slots = 0
+﻿capital = 608
+set_research_slots = 0
 set_stability = 1
 set_war_support = 1
 set_convoys = 114514
@@ -14,7 +15,8 @@ add_ideas = {
 
 set_technology = {
 	zombietech=1
-	infantry_equipment_0=0
+	infantry_weapons=0
+	mtg_transport=1
 	#basic_train=1
 }
 

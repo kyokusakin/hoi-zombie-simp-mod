@@ -3,9 +3,9 @@ ZOM_StrikeForce_1 = {
 		original_tag = ZOM 
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}	
-	mission = { naval_strike }
+	mission = { naval_strike naval_invasion_support }
 	min_composition = {
 		zombie_navy_BB = {
 			amount = 2
@@ -14,19 +14,19 @@ ZOM_StrikeForce_1 = {
 			amount = 8
 		}
 		zombie_navy_DD = {
-			amount = 16
+			amount = 20
 		}
 	}
 	
 	optimal_composition = {
 		zombie_navy_BB = {
-			amount = 8
+			amount = 4
 		}
 		zombie_navy_CL = {
-			amount = 32
+			amount = 16
 		}
 		zombie_navy_DD = {
-			amount = 100
+			amount = 40
 
 		}
 	}

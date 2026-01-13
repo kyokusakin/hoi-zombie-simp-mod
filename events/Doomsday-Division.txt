@@ -47,9 +47,7 @@ news_event = {
 	desc = "doomsday.2.desc"
 	picture = GFX_news_event_saf_soldiers_2
 	is_triggered_only = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 		name = doomsday.2.a
@@ -88,9 +86,7 @@ country_event = {
 	picture = GFX_news_event_saf_soldiers_2
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 			183 = {
@@ -118,9 +114,7 @@ country_event = {
 	picture = GFX_news_event_saf_soldiers_2
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 			183 = {
@@ -147,9 +141,7 @@ country_event = {
 	desc = "doomsday.5.desc"
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 		name = doomsday.5.a
@@ -205,9 +197,7 @@ country_event = {
 	desc = "doomsday.7.desc"
 	picture = GFX_report_event_generic_research_lab
 	is_triggered_only = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 		trigger = {
@@ -246,9 +236,7 @@ country_event = {
 	desc = "doomsday.8.desc"
 	picture = GFX_report_event_chinese_soldiers
 	is_triggered_only = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 		trigger = {
@@ -284,9 +272,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 		every_country ={
@@ -315,9 +301,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 		trigger = {
@@ -351,9 +335,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	option = {
 		trigger = {
@@ -387,9 +369,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 	
 	option = {
 		trigger = {
@@ -467,9 +447,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	option = {
  		division_template = {
@@ -602,9 +580,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	option = {		
 		load_oob = "MERC_Infantry"
@@ -640,9 +616,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 	immediate = {
 		add_ideas = {
 			the_other_way
@@ -686,9 +660,7 @@ country_event = {
 	picture = GFX_country_event_stalin_meeting
 	fire_only_once = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 	
 	option = {
 		trigger = {
@@ -757,9 +729,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	immediate = {
 		if = {
@@ -835,9 +805,6 @@ country_event = {
 			}
 		} 
 	}
-	option = {
-	}
-
 }
 
 
@@ -848,9 +815,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 
 	immediate = {
 		if = {
@@ -926,9 +891,6 @@ country_event = {
 			}
 		} 
 	}
-	option = {
-	}
-
 }
 
 country_event = {
@@ -938,9 +900,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 	
 	immediate = {
 		every_country = {
@@ -1027,9 +987,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 	
 	immediate = {
 		every_state = {
@@ -1052,9 +1010,7 @@ country_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 	is_triggered_only = yes
 	hidden = yes
-	
-	trigger = {
-	}
+
 	
 	immediate = {
 		if = {

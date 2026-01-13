@@ -8,9 +8,6 @@ news_event = {
 	picture = GFX_event_mussolini_hitler
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = { 
-	}
 
 	option = {
 		name = Zombienews.1.a	
@@ -24,10 +21,7 @@ news_event = {
 	picture = GFX_event_mussolini
 	major = yes
 	is_triggered_only = yes
-	
 
-	trigger = {
-	}
 
 	option = {
 		name = Zombienews.2.a	
@@ -41,9 +35,6 @@ news_event = {
 	picture = GFX_event_goering
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 	option = {
 		name = Zombienews.3.a
@@ -59,9 +50,6 @@ news_event = {
 	is_triggered_only = yes
 	major = yes
 	
-	trigger = {
-	}
-	
 	option = {
 		name = Zombienews.4.a
 	}
@@ -76,8 +64,7 @@ news_event = {
 	
 	major = yes
 	is_triggered_only = yes
-	trigger = {
-	}
+
 	
 	option = {
 		trigger = { NOT= {TAG = JAP} }
@@ -103,8 +90,7 @@ news_event = {
 	picture = GFX_news_event_japanese_army_parade
 	is_triggered_only = yes
 
-	trigger = {
-	}
+
 	
 	
 	option = {
@@ -122,8 +108,7 @@ news_event = {
 	picture = GFX_news_event_japanese_army_parade
 	is_triggered_only = yes
 
-	trigger = {
-	}
+
 	
 	option = {
 		name = Zombienews.7.a	
@@ -144,9 +129,6 @@ news_event = {
 	picture = GFX_news_event_japanese_army_parade
 	is_triggered_only = yes
 	major = yes
-	
-	trigger = {
-	}
 	
 	
 	option = {
@@ -170,9 +152,6 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 	
-	trigger = {
-	}
-	
 	option = {
 		name = Zombienews.9.a
 		
@@ -187,11 +166,8 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 	
-	trigger = {	
-	}
-	
 	option = {
-		name = Zombienews.10.a			
+		name = Zombienews.10.a
 	}
 }
 
@@ -202,9 +178,6 @@ news_event = {
 	picture = GFX_event_spain
 	is_triggered_only=yes
 	major = yes
-	
-	trigger = {
-	}
 	
 	
 	option = {
@@ -220,9 +193,6 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 	
-	trigger = {
-	}
-	
 	
 	option = {
 		name = Zombienews.12.a		
@@ -236,9 +206,6 @@ news_event = {
 	picture = GFX_event_widerstand1
 	is_triggered_only = yes
 	major = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -253,10 +220,7 @@ news_event = {
 	desc = "Zombienews.14.desc"
 	picture = GFX_event_widerstand2
 	is_triggered_only = yes
-	major = yes	
-	trigger = {
-	}
-
+	major = yes
 
 	option = {
 		name = Zombienews.13.a		
@@ -270,8 +234,7 @@ news_event = {
 	picture = GFX_event_widerstand3
 	is_triggered_only = yes
 	major = yes
-	trigger = {
-	}
+
 
 
 	option = {
@@ -286,9 +249,6 @@ news_event = {
 	picture = GFX_event_widerstand4
 	is_triggered_only = yes
 	major = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -306,9 +266,6 @@ news_event = {
 	picture = GFX_news_event_ger_civil_war
 	is_triggered_only = yes
 	major = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -323,9 +280,6 @@ news_event = {
 	picture = GFX_news_event_hitler_handshake
 	is_triggered_only = yes
 	major = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -340,9 +294,6 @@ news_event = {
 	picture = GFX_news_event_worker_protests
 	is_triggered_only = yes
 	major = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -357,9 +308,6 @@ news_event = {
 	picture = GFX_news_event_eng_churchill_sign_treaty
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -376,9 +324,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -393,9 +338,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -410,9 +352,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -427,9 +366,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -444,9 +380,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -461,9 +394,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -478,9 +408,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -495,9 +422,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -512,9 +436,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -529,9 +450,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -546,9 +464,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -563,10 +478,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
-
 
 	option = {
 		name = Zombienews.32.a			
@@ -580,9 +491,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -597,9 +505,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -614,9 +519,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -631,9 +533,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -648,9 +547,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -665,9 +561,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -682,9 +575,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -699,9 +589,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -716,9 +603,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -733,9 +617,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -750,9 +631,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -767,9 +645,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -784,9 +659,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -801,9 +673,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -818,9 +687,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -835,9 +701,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -852,9 +715,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -869,9 +729,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -886,9 +743,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -903,9 +757,6 @@ news_event = {
 	picture = GFX_event_zombie_landing
 	major = yes
 	is_triggered_only = yes
-	
-	trigger = {
-	}
 
 
 	option = {
@@ -985,8 +836,7 @@ news_event = {
 		day = 1
 	}
 
-	trigger = {
-	}
+
 	
 	option = {
 		name = Zombienews.57.a 
@@ -1000,8 +850,6 @@ news_event = {
 	picture = GFX_news_event_indian_parade
 	major = yes
 	is_triggered_only = yes
-	
-
 	option = {
 		name = Zombienews.58.a
 	}
@@ -1101,8 +949,7 @@ news_event = {
 	picture = GFX_news_event_SOV_supreme_soviet
 	major = yes
 	is_triggered_only = yes
-	trigger = {
-	}
+
 	
 	option = {
 		trigger={
@@ -1128,8 +975,7 @@ news_event = {
 	picture = GFX_news_event_FIN_three_country_cairn_flag_raising
 	major = yes
 	is_triggered_only = yes
-	trigger = {
-	}
+
 	
 	option = {
 		trigger={
@@ -1156,8 +1002,7 @@ news_event = {
 	picture = GFX_news_event_hungary_refused
 	major = yes
 	is_triggered_only = yes
-	trigger = {
-	}
+
 	
 	option = {
 		trigger={

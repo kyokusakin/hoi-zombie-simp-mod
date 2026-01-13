@@ -85,6 +85,7 @@ doomsday_initiative = {
 				has_idea = doomsdayheadquarters
 				has_war_with = ZCO
 				}
+			NOT = { is_puppet = yes }
 			ZCO = { exists = yes}
 		}
 		cost = 85
@@ -358,9 +359,6 @@ doomsday_initiative = {
 				ZCO = { news_event = { days = 1 id = doomsday.33 } }
 			}
 		}
-
-		ai_will_do = {
-		}
 	}
 	
 	ZCOM_resurrect = {
@@ -583,9 +581,6 @@ Black_market = {
 	recrute_merc = {
 		icon = generic_operation
 
-		available = {
-		}
-		
 		cost = 100		
 		days_re_enable = 25
 		
@@ -651,9 +646,6 @@ Black_market = {
 	sell_zombie_parts= {
 		icon = generic_operation
 
-		available = {
-		}
-		
 		cost = 0
 		days_re_enable = 20		
 		
@@ -678,10 +670,6 @@ Black_market = {
 	
 	verbindungen_kappen= {
 		icon = generic_operation
-
-		available = {
-		}
-		
 		cost = 0
 		fire_only_once = yes	
 		

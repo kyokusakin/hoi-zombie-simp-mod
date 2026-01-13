@@ -11,22 +11,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_Zombie_icon.dds" 
 		noOfFrames = 2
 	}
-    	spriteType = { 
-        	name = "GFX_unit_Zombies2_icon_medium"				
-        	textureFile = "gfx/interface/counters/divisions_large/Zombie_mutation_icon.dds"
-        	noOfFrames = 2
-    	}
+    spriteType = { 
+    	name = "GFX_unit_Zombies2_icon_medium"				
+    	textureFile = "gfx/interface/counters/divisions_large/Zombie_mutation_icon.dds"
+    	noOfFrames = 2
+    }
 
 	spriteType = { 
 		name = "GFX_unit_Zombies2_icon_medium_white"						
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_Zombie_mutation_icon.dds" 
 		noOfFrames = 2
 	}
-    	spriteType = { 
-        	name = "GFX_unit_Zombies3_icon_medium"				
-        	textureFile = "gfx/interface/counters/divisions_large/Zombie_mutation_better_icon.dds"
-        	noOfFrames = 2
-    	}
+    spriteType = { 
+    	name = "GFX_unit_Zombies3_icon_medium"				
+    	textureFile = "gfx/interface/counters/divisions_large/Zombie_mutation_better_icon.dds"
+    	noOfFrames = 2
+    }
 
 	spriteType = { 
 		name = "GFX_unit_Zombies3_icon_medium_white"						

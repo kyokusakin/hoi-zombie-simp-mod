@@ -182,9 +182,6 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 
-	trigger = {
-	}
-	
 	option ={
 		hidden_effect = {
 				country_event = { days = 1 id = Zombienews.8 }

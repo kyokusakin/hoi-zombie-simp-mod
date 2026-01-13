@@ -4,8 +4,6 @@ news_event = {
     id = antidote.1
     title = {
         text = antidote.1.title
-        trigger = {
-        }
     }
     desc = "antidote.1.desc"
     picture = GFX_news_event_secure_the_wayward_ally

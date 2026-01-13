@@ -28,6 +28,7 @@ country_event = {
 	trigger = {
 		NOT = { original_tag = ZCO }
         NOT = { original_tag = ZOM }
+		is_puppet = no
         country_exists = ZCO
         ROOT = {
             any_allied_country = {
@@ -37,11 +38,11 @@ country_event = {
         is_major = no
         OR = {
             has_capitulated = yes
-            surrender_progress > 0.9
+            surrender_progress > 0.8
         }
         is_ai = yes
 	}
-	mean_time_to_happen = { days = 14 }
+	mean_time_to_happen = { days = 7 }
 
 	option = {
 		name = Namnamnam

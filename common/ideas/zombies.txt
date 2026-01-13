@@ -47,6 +47,9 @@ ideas = {
 				crypto_strength = 100
 				intelligence_agency_defense = 100
 				energy_gain_factor = 10
+				naval_invasion_capacity = 24
+				naval_invasion_prep_speed = 100
+				naval_invasion_division_cap = 12
 			}
 		}
 		HARD_Besser= {

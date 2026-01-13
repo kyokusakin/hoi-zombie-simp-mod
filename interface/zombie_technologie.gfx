@@ -10,10 +10,22 @@ spriteTypes = {
 	}   
 	spriteType = {
 		name = "GFX_zombietech3_medium"
-		texturefile = "gfx/interface/technologies/zombie_3.dds"
+		texturefile = "gfx/interface/technologies/zombie_2.dds"
 	} 
 	spriteType = {
         name = "GFX_fly_zombie_medium"
         texturefile = "gfx/interface/technologies/fly_zombie_0.dds"
     }
+	spriteType = {
+		name = "GFX_zombietech_navy_1_medium"
+		texturefile = "gfx/interface/technologies/advanced_destroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_zombietech_navy_2_medium"
+		texturefile = "gfx/interface/technologies/advanced_light_cruiser.dds"
+	}
+	spriteType = {
+		name = "GFX_zombietech_navy_3_medium"
+		texturefile = "gfx/interface/technologies/advanced_battlecruiser.dds"
+	}
 }

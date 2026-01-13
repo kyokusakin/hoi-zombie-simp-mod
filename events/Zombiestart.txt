@@ -329,8 +329,6 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-	}
 	mean_time_to_happen = { days = 5 }
 
 	option = {
@@ -364,8 +362,6 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-	}
 	mean_time_to_happen = { days = 5 }
 
 	option = {
@@ -402,8 +398,6 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-	}
 	mean_time_to_happen = { days = 5 }
 
 	option = {
@@ -438,8 +432,6 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-	}
 	mean_time_to_happen = { days = 5 }
 
 	option = {
@@ -631,8 +623,6 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	trigger = {
-	}
 	mean_time_to_happen = { days = 5 }
 
 	option = {
