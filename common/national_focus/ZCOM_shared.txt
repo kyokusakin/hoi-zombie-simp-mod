@@ -954,8 +954,15 @@ shared_focus = {
 			ZOM = {
 				add_ideas = idea_antidote
 			}
+			ZOM = {
+				remove_ideas = {
+					HARD_Besser
+					EXTREME_Besser
+					INSANE_Besser
+				}
+			}
 		}
-		news_event = { id = antidote.1}
+		news_event = { id = antidote.1 }
 	}
 }
 ####RUSSIA#####	

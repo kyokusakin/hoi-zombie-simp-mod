@@ -1,5 +1,5 @@
 version="5.6.0"
-name="Doomsday series: Zombies Chinese"
+name="Doomsday series: Zombies Chinese dev"
 tags={
 	"Alternative History"
 }
